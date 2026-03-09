@@ -55,5 +55,3 @@ Screenshot-screenshot berikut diambil saat melakukan tugas praktikum:
 - Isi dari "Line-based text data" yang berisi respons HTML:
   ![Line-Based Text Data: text/html](../Asset/Image/lineBasedTextDataHtmlVer.png)
   Gambar ini menunjukkan contoh output yang wajib dicantumkan dalam laporan.
-
-cara masukin gambar ke github agar bisa di tampilkan
