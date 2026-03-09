@@ -58,9 +58,10 @@ Screenshot-screenshot berikut diambil saat melakukan tugas praktikum:
 ![bd20df49-24ab-453b-bf89-d6f704f58fb8](https://github.com/user-attachments/assets/84e0bc21-32f8-42a3-bfda-d5678612916a)
 
 - Hasil filter paket menggunakan kata kunci "http":
-![10ef3187-3095-4c05-9401-eaf0c5eb509d](https://github.com/user-attachments/assets/61e50b1e-60ab-44bb-8a90-f996fdd108aa)
+![883fcc18-b5f6-4b40-ae96-f0446a523e26](https://github.com/user-attachments/assets/9e6af497-89af-42c9-b588-0d8a35b33a99)
 
 - Isi dari "Line-based text data" yang berisi respons HTML:
-![883fcc18-b5f6-4b40-ae96-f0446a523e26](https://github.com/user-attachments/assets/28da93f5-91b4-4f9d-bade-821869123a9e)
+![10ef3187-3095-4c05-9401-eaf0c5eb509d](https://github.com/user-attachments/assets/56ea9b29-aa0d-4137-992f-41d670f5df38)
+
 
   Gambar ini menunjukkan contoh output yang wajib dicantumkan dalam laporan.
