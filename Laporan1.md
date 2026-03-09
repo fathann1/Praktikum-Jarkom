@@ -1,6 +1,6 @@
 # Laporan Praktikum Week 1
 Nama       : Muhammad Rajwa Al Fathan Koessaputra  
-NIM        : 103072400113
+NIM        : 103072400113  
 Kelas      : IF-04-05  
 Mata Kuliah: Jaringan Komputer  
 __________________________________________
