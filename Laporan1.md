@@ -14,8 +14,8 @@ Instalasi berjalan tanpa kendala, hanya butuh waktu beberapa menit hingga Wiresh
 ### Dokumentasi Instalasi
 Saya mengambil beberapa screenshot selama proses instalasi untuk dokumentasi:
 - Halaman download Wireshark:
-  ![Wireshark Website](../Image/wiresharkWebsite.png)
-- Langkah awal setup:
+-![d71cb4f3-d50c-496a-92e1-638e1599a8fd](https://github.com/user-attachments/assets/da872958-112e-4a12-8d53-0eec677efcea)
+ Langkah awal setup:
   ![install setup part 1](../Image/installationSetupPart1.png)
 - Persetujuan lisensi:
   ![install setup part 2]()
