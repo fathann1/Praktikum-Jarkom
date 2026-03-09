@@ -1,6 +1,6 @@
 # Laporan Praktikum Week 1
-Nama       : Gusti Rifan  
-NIM        : 103072400150
+Nama       : Muhammad Rajwa Al Fathan Koessaputra  
+NIM        : 103072400113
 Kelas      : IF-04-05  
 Mata Kuliah: Jaringan Komputer  
 __________________________________________
@@ -54,4 +54,4 @@ Screenshot-screenshot berikut diambil saat melakukan tugas praktikum:
   ![Tampilan Capture from Wi-Fi With Filter HTTP](../Asset/Image/tampilanCaptureFromWifiWithFilterHTTP.png)
 - Isi dari "Line-based text data" yang berisi respons HTML:
   ![Line-Based Text Data: text/html](../Asset/Image/lineBasedTextDataHtmlVer.png)
-  Gambar ini menunjukkan contoh output yang wajib dicantumkan dalam laporan.<img width="594" height="110" alt="image" src="https://github.com/user-attachments/assets/28141c30-b2fc-4d69-a1c9-3985b1552e7e" />
+  Gambar ini menunjukkan contoh output yang wajib dicantumkan dalam laporan.
