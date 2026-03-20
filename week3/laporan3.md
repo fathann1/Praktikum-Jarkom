@@ -58,8 +58,9 @@ Pada bagian ini dibahas proses pengambilan data berukuran besar, seperti halaman
 http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
 ![830c2e41-3067-4fd1-a046-3518d66a69b3](https://github.com/user-attachments/assets/5fc3157a-a61c-46bf-9819-05f2ba29d6ff)
 
-3. Gunakan filter HTTP untuk menampilkan paket yang sesuai. Kemudian pilih salah satu paket untuk melihat detail ![7a1206a3-d985-4281-b0f7-f93c02f4004a](https://github.com/user-attachments/assets/92e05f07-9894-4823-9322-0be23dae341e)
-isi paket tersebut.
+3. Gunakan filter HTTP untuk menampilkan paket yang sesuai. Kemudian pilih salah satu paket untuk melihat detail isi paket tersebut.
+![7a1206a3-d985-4281-b0f7-f93c02f4004a](https://github.com/user-attachments/assets/92e05f07-9894-4823-9322-0be23dae341e)
+
 
 
 ---
