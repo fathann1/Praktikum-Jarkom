@@ -27,3 +27,40 @@ langkah langkah percobaan
 
 
 ---
+
+## Uji Coba Web Tidak Ditemukan
+Percobaan ini dilakukan untuk mengamati bagaimana respons server ketika klien mengakses alamat website yang tidak valid, namun tetap menggunakan protokol HTTP. Dengan demikian, percobaan ini bertujuan untuk memahami bagaimana server menangani permintaan yang salah atau tidak ditemukan dalam proses komunikasi berbasis HTTP.
+
+## Langkah-langkah Percobaan
+1. Buka Wireshark, pilih jaringan WIFI, lalu mulai proses capture paket.
+![c53f0a04-d0a9-469b-9fe8-5d3ae4e21a58](https://github.com/user-attachments/assets/3e610ad0-4c3e-4a5b-bc1b-e7236f3a032f)
+
+2. Terapkan filter HTTP untuk menampilkan paket yang relevan.
+![7fb0f419-49af-48a1-afeb-1329fe01af06](https://github.com/user-attachments/assets/5847cf60-3afb-4eae-902c-925f941e619a)
+
+3. Selanjutnya, coba akses link HTTP yang dimodifikasi dengan menambahkan karakter acak, misalnya:
+http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file1.htmlfathan
+
+4. Setelah itu, periksa kembali di Wireshark dan akan terlihat status error seperti kode 404 pada paket HTTP.
+![4e192d2f-8ed0-4739-93cd-453f5629dae6](https://github.com/user-attachments/assets/9121df9c-5917-4d7f-8cb9-99b9d4d739f1)
+
+
+---
+
+## Modul 3.3 Mengambil Dokumen Berukuran Besar
+Pada bagian ini dibahas proses pengambilan data berukuran besar, seperti halaman web atau file, melalui jaringan. Proses tersebut dapat diamati melalui hasil capture paket, yang melibatkan berbagai protokol komunikasi seperti HTTP, TCP, maupun FTP, sehingga memberikan gambaran yang lebih jelas mengenai alur transfer data dari server ke client.
+
+## Langkah-langkah Percobaan
+1. Jalankan Wireshark dan pilih jaringan WIFI, kemudian mulai capture paket.
+![91557ff1-9127-4ee7-8153-885065c5c529](https://github.com/user-attachments/assets/ec890fa3-a151-4b9b-af4c-8f77c920cb6f)
+
+2. Buka browser dan akses halaman berikut:
+http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
+![830c2e41-3067-4fd1-a046-3518d66a69b3](https://github.com/user-attachments/assets/5fc3157a-a61c-46bf-9819-05f2ba29d6ff)
+
+3. Gunakan filter HTTP untuk menampilkan paket yang sesuai. Kemudian pilih salah satu paket untuk melihat detail ![7a1206a3-d985-4281-b0f7-f93c02f4004a](https://github.com/user-attachments/assets/92e05f07-9894-4823-9322-0be23dae341e)
+isi paket tersebut.
+
+
+---
+
