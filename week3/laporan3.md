@@ -11,15 +11,20 @@ langkah langkah percobaan
 
 
 2. Setelah aplikasi terbuka, pilih jaringan WIFI untuk memulai proses capture paket.
-![Gambar 1.1](../image/modul3_ss/1_2.png)
+![12329c3e-2d57-4969-85d7-11b97cee64b0](https://github.com/user-attachments/assets/80c29215-4a48-41f7-a255-9236b468bb2a)
+
 
 3. Pastikan proses capture sudah berjalan, kemudian buka browser dan akses halaman berikut: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file1.html
-![Gambar 1.1](../image/modul3_ss/1_3.png)
+![0a591250-19a9-42c6-a8a8-e2abdd612854](https://github.com/user-attachments/assets/e4c86309-f0a1-4204-aa67-9e2e197e14de)
 
-4. Gunakan fitur filter pada Wireshark untuk menampilkan paket dengan protokol HTTP.
-![Gambar 1.1](../image/modul3_ss/1_4.png)
+
+4. Pakai filter pada Wireshark untuk menampilkan paket dengan protokol HTTP.
+![2cf37c27-4491-4cda-a17e-f3ff12a2618b](https://github.com/user-attachments/assets/0c5f1a00-9fe4-4173-8413-7d13e7475488)
+
+
 
 5. Hentikan proses capture, lalu pilih salah satu paket untuk melihat detail informasi yang ditampilkan.
-![Gambar 1.1](../image/modul3_ss/1_5.png)
+![259e3970-bf72-47d4-bcdf-a71dd90f7a24](https://github.com/user-attachments/assets/5b212b2b-fa77-49be-b0f7-ab3bc6a180d4)
+
 
 ---
