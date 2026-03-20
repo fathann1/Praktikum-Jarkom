@@ -7,7 +7,8 @@ langkah langkah percobaan
 
 ## Langkah-langkah Percobaan
 1. Pertama, jalankan aplikasi Wireshark terlebih dahulu.
-![Gambar 1.1](![9136662e-8994-4d16-9bd1-80663fae44af](https://github.com/user-attachments/assets/0fc216b1-fa9e-4be7-83c2-64c9124423de))
+![9136662e-8994-4d16-9bd1-80663fae44af](https://github.com/user-attachments/assets/c87bdc52-7725-4245-9f69-1010df51474f)
+
 
 2. Setelah aplikasi terbuka, pilih jaringan WIFI untuk memulai proses capture paket.
 ![Gambar 1.1](../image/modul3_ss/1_2.png)
