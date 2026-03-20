@@ -19,8 +19,7 @@ langkah langkah percobaan
 
 
 4. Pakai filter pada Wireshark untuk menampilkan paket dengan protokol HTTP.
-![2cf37c27-4491-4cda-a17e-f3ff12a2618b](https://github.com/user-attachments/assets/0c5f1a00-9fe4-4173-8413-7d13e7475488)
-
+![ad64209b-0912-4aa7-8b5e-0f48f24efc07](https://github.com/user-attachments/assets/26e2c784-50ed-41db-a4ec-d64492f0dadd)
 
 
 5. Hentikan proses capture, lalu pilih salah satu paket untuk melihat detail informasi yang ditampilkan.
