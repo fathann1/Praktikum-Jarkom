@@ -62,6 +62,40 @@ http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
 ![7a1206a3-d985-4281-b0f7-f93c02f4004a](https://github.com/user-attachments/assets/92e05f07-9894-4823-9322-0be23dae341e)
 
 
+---
+
+## Modul 3.4 Dokumen HTML dengan Embedded Objects
+Pada modul ini dipelajari dokumen HTML yang memuat berbagai objek tambahan seperti gambar, CSS, dan JavaScript. Saat halaman dibuka, browser akan mengirimkan beberapa request HTTP untuk mengambil seluruh elemen tersebut. Proses ini dapat diamati melalui hasil capture paket menggunakan Wireshark, sehingga membantu memahami bagaimana sebuah halaman web dimuat secara lengkap oleh browser.
+
+## Langkah-langkah Percobaan
+1. Buka Wireshark, pilih jaringan WIFI, lalu mulai capture paket.
+![7d5ba07d-a56c-4a10-b140-4d80ae3024f8](https://github.com/user-attachments/assets/29b172fa-73b9-45ca-9691-974069aec599)
+
+2. Buka browser dan akses halaman berikut:
+http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html
+![57a57c84-c725-4a93-9bd6-07c91ec5db29](https://github.com/user-attachments/assets/dcf24cee-6198-4dba-b0b1-60fd00e682c3)
+
+
+3. Kembali ke Wireshark dan gunakan filter HTTP untuk melihat paket yang ditangkap. Setelah halaman dibuka, pada Wireshark akan terlihat data seperti format JPEG, karena halaman tersebut memuat gambar yang ikut dikirim melalui request HTTP.
+![70fb611d-58cd-43f0-ab86-9afa4a4343ec](https://github.com/user-attachments/assets/e2878ff0-6f18-410e-b25a-af1a9e28b749)
+
 
 ---
 
+## Modul 3.5 HTTP Authentication
+Pada bagian ini dibahas proses autentikasi HTTP, yaitu mekanisme login yang terjadi ketika client mengakses halaman yang memerlukan username dan password. Proses ini dapat diamati melalui paket HTTP yang ditangkap menggunakan Wireshark, sehingga memberikan pemahaman mengenai bagaimana data autentikasi dikirim dan diproses dalam komunikasi antara client dan server.
+
+## Langkah-langkah Percobaan
+1. Jalankan Wireshark, pilih jaringan WIFI, lalu mulai capture paket.
+![d95e8679-fac7-4f79-a44f-7f47464c2022](https://github.com/user-attachments/assets/e4e40182-0aa3-46a2-a2a0-5ef26766a9e0)
+
+2. Buka browser dan akses halaman berikut:
+http://gaia.cs.umass.edu/wireshark-labs/protected_pages/HTTP-wireshark-file5.html
+![5df11a6b-a5c8-41dd-bb99-a97f6647ed81](https://github.com/user-attachments/assets/a5f14db7-e6ca-44a2-abc2-780679cad9b4)
+akan muncul perintah di minta untuk masukkan username dan password
+
+3. Masukkan username **wireshark-students** dan password **network**, lalu tekan enter.
+![556cb4d7-973a-4fde-b89c-531a81392377](https://github.com/user-attachments/assets/7a1b68ef-b342-4e21-b2a2-407f2138a587)
+
+4. Setelah berhasil, pada Wireshark akan terlihat respon seperti "Unauthorized" pada salah satu paket HTTP.
+![84fe07b8-9fa0-469c-8970-2906d0859a7b](https://github.com/user-attachments/assets/561a83be-c0a4-4052-9e7a-93c0ddf49f26)
