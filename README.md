@@ -1,1 +1,1 @@
-Praktikum Jarkom Week 1
+Praktikum Jarkom
