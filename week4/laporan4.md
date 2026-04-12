@@ -4,7 +4,7 @@ DNS (Domain Name System) adalah sistem yang mengubah nama domain (seperti google
 
 Sebenarnya, proses yang lebih rumit terjadi di sisi server. Server DNS yang tersusun secara hierarki akan saling berkomunikasi untuk mencari jawaban, baik secara rekursif maupun iteratif, tanpa terlihat oleh pengguna.
 
-## 1. Nslookup
+## 4.2 Nslookup
 Nslookup adalah perintah yang digunakan untuk melakukan query ke server DNS guna mendapatkan informasi tentang domain atau host, seperti alamat IP, nama domain, dan record DNS lainnya. Perintah ini bekerja dengan mengirim permintaan ke server DNS tertentu, lalu menampilkan hasil responsnya kepada pengguna.
 
 ### Contoh Penggunaannya:
@@ -19,7 +19,7 @@ Nslookup adalah perintah yang digunakan untuk melakukan query ke server DNS guna
 3) tulis nslookup [www.aiit.or.kr](http://www.aiit.or.kr) bitsy.mit.edu digunakan untuk mencari informasi DNS dari domain [www.aiit.or.kr](http://www.aiit.or.kr) dengan menggunakan server DNS tertentu, yaitu bitsy.mit.edu.
 ![49567cd9-1419-4ddf-9615-db529bea7615](https://github.com/user-attachments/assets/5e51c37c-2915-479d-bc91-357b97e65580)
 
-## 2. Ipconfig
+## 4.3 Ipconfig
 Ipconfig digunakan untuk mengelola informasi DNS yang tersimpan di komputer (host). Komputer dapat menyimpan hasil DNS yang baru saja didapat. Untuk melihat data yang tersimpan, setelah prompt C:> masukkan perintah berikut:
 
 1) Tulis "ipconfig /all" digunakan untuk menampilkan informasi lengkap konfigurasi jaringan pada komputer, seperti nama host, status jaringan, alamat IP, subnet mask, gateway, DNS server, dan informasi lain dari adaptor jaringan.
@@ -34,4 +34,6 @@ Ipconfig digunakan untuk mengelola informasi DNS yang tersimpan di komputer (hos
 4) selanjutnya tulis "ipconfig /flushdns" digunakan untuk menghapus cache DNS di komputer. Dengan menghapus cache ini, sistem akan mengambil ulang data DNS terbaru dari server, dan biasanya dipakai untuk mengatasi masalah koneksi atau error DNS.
 ![8e95b9dc-1dd8-4644-bc35-24adac154571](https://github.com/user-attachments/assets/039db82e-a2ad-4ba3-9cd4-9106fac8c1e8)
 
+# 4.4 Tracing DNS dengan Wireshark
+Mempelajari proses memantau dan menganalisis paket data DNS yang dikirim dan diterima oleh komputer melalui jaringan, sehingga pengguna dapat melihat bagaimana permintaan pencarian domain (DNS query) dikirim ke server dan bagaimana responsnya diterima, yang berguna untuk memahami alur kerja DNS serta membantu dalam proses troubleshooting jaringan.
 
