@@ -62,4 +62,5 @@ Dari percobaan yang di lakukan terilhat bahwa DNS menggunakan TCP
 ![71487c76-a598-47b7-9853-7cdba3ec646b](https://github.com/user-attachments/assets/e7ac18f6-dfad-403b-92f6-3ac6f37d061e)
 
 Source Port → 53 (dari server DNS)
+
 Destination Port → 63199 (kembali ke client)
