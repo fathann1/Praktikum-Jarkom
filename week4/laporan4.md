@@ -68,10 +68,10 @@ Destination Port → 63199 (kembali ke client)
 ## B. Analisis DNS Menggunakan Perintah nslookup (www.mit.edu)
 Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 
-1) Buka command prompt (CMD) dan ketikan nslookup www.mit.edu
+1. Buka command prompt (CMD) dan ketikan nslookup www.mit.edu
 ![91b3eb7d-ece3-4194-b766-ad7aa5e08633](https://github.com/user-attachments/assets/163d9ba4-bca2-4f80-aaca-1bb9645d5647)
 
-2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter DNS, lalu ambil data dari Standard query (request) dan Standard query response dari www.mit.edu
+2. Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter DNS, lalu ambil data dari Standard query (request) dan Standard query response dari www.mit.edu
 ![2d0c3659-591f-4806-b8b4-ef7e30d8b502](https://github.com/user-attachments/assets/999e6bbe-def1-4f9a-b4e7-756c7fd25cdb)
 
 ## Pertanyaan
@@ -106,12 +106,35 @@ Pada percobaan yang dilakukan, terlihat bahwa tipe yang muncul adalah AAAA (IPv6
 
 ## Pertanyaan 
 1. Alamat IP request
-![tampilan](../assets/image/Pertanyaan%201%20Poin%20C.png)
+![f39b8711-7bed-4c29-9d8a-8573cd556646](https://github.com/user-attachments/assets/e39348c2-36d9-4360-8bc3-0294458377d1)
+
+2. Ketik dan jawab permintaan
+![d1eed941-30b0-4beb-8a37-4f1986d162a2](https://github.com/user-attachments/assets/d568c711-4aae-40d8-98ea-91c3ec44221c)
+
+Pada percobaan terlihat bahwa tipe request DNS adalah NS, yang berarti belum berisi jawaban karena masih berupa permintaan saja.
+
+3. Jawab Respon
+![07c464ee-4d2b-4684-b5a4-bda36c8363b1](https://github.com/user-attachments/assets/8077af74-01b4-4a8e-9d4c-c8e5fed7813f)
+
+## D. Analisis DNS Menggunakan Server Tertentu (www.aiit.or.kr bitsy.mit.edu)
+1. Buka CMD ketikan nslookup www.aiit.or.kr bitsy.mit.edu
+![186b7acc-c965-40f9-8792-2a81927d3c84](https://github.com/user-attachments/assets/619f0785-384b-47cf-9705-94da4bc67199)
+
+
+2. Buka Wireshark lalu pilih wifi, setelah itu pada bagian filter ketik dns untuk memunculkan bagian dns saja
+![5586f131-531e-4e56-bbf9-c1196989d3a2](https://github.com/user-attachments/assets/b1f64d02-cecc-4155-bc5c-94346ff65591)
+
+3. Ambil data dari Standard query (request) dari www.aiit.or.kr
+![9e350ae2-c24d-4431-9413-b61b75aeb522](https://github.com/user-attachments/assets/59cbb937-3989-49e2-9cbe-85f6ea146876)
+
+
+## Pertanyaan
+1. Alamat IP request
+
+Pesan permintaan DNS dikirim ke alamat IP 18.0.72.3. Alamat tersebut merupakan server bitsy.mit.edu yang ditentukan secara manual pada perintah nslookup, sehingga bukan merupakan DNS server lokal
 
 2. Type dan answers request
-![tampilan](../assets/image/Pertanyaan%202%20Poin%20C.png)
 
-Pada percobaan bisa terlihat bahwa Type request dari DNS adalah NS yang artinya tidak mengandung jawaban karena hanya permintaan
+Tipe DNS request adalah A (Address Record). Pesan ini tidak mengandung jawaban karena hanya berupa permintaan
 
-3. Answer Response
-![tampilan](../assets/image/Pertanyaan%203%20Poin%20C.png)
+3. Answers response Berdasarkan hasil pada Command Prompt, terlihat bahwa terjadi “DNS request timed out”, yang menunjukkan bahwa server DNS tidak merespon permintaan yang dikirimkan
