@@ -140,5 +140,7 @@ Pesan permintaan DNS dikirim ke alamat IP 192,168.1.1 Alamat tersebut merupakan 
 Tipe DNS request adalah A (Address Record). Pesan ini tidak mengandung jawaban karena hanya berupa permintaan
 
 3. Berdasarkan hasil di Command Prompt, muncul “DNS request timed out” yang berarti server DNS tidak memberikan respons terhadap permintaan yang dikirim.
-![6a93ab53-b7f7-405c-ac26-a9bd5f756faf](https://github.com/user-attachments/assets/10f41eb8-61f7-4fca-963a-7d1b65ff5e49)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/10f41eb8-61f7-4fca-963a-7d1b65ff5e49" width="600"/>
+</p>
 
