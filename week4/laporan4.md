@@ -10,9 +10,8 @@ Nslookup adalah perintah yang digunakan untuk melakukan query ke server DNS guna
 ### Contoh Penggunaannya:
 1) Perintah nslookup [www.mit.edu](http://www.mit.edu) digunakan untuk mengecek apakah domain tersebut terdaftar dan memiliki alamat IP. Perintah ini mengirim permintaan ke server DNS lalu menampilkan hasilnya. Jika hasilnya domain tidak ditemukan, berarti domain tersebut tidak terdaftar di sistem DNS.
 <p align="center">
-![ca5390de-959f-44d9-80d4-677a317d3ed3](https://github.com/user-attachments/assets/35096e0b-67d0-4b09-8e81-fb71a95dd0fe)
+  <img src="https://github.com/user-attachments/assets/35096e0b-67d0-4b09-8e81-fb71a95dd0fe" width="600"/>
 </p>
-
 2) Perintah nslookup -type=NS mit.edu digunakan untuk mengetahui Name Server (NS) yang menangani domain mit.edu. Perintah ini mengirim permintaan ke server DNS untuk melihat server mana saja yang mengelola domain tersebut.
 ![3ec2a305-25a8-4099-a65e-b472469d8ccb](https://github.com/user-attachments/assets/1a221639-5f7d-4b0d-9355-836cc6adc873)
 
