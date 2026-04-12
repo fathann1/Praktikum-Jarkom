@@ -19,4 +19,7 @@ Nslookup adalah perintah yang digunakan untuk melakukan query ke server DNS guna
 3) tulis nslookup [www.aiit.or.kr](http://www.aiit.or.kr) bitsy.mit.edu digunakan untuk mencari informasi DNS dari domain [www.aiit.or.kr](http://www.aiit.or.kr) dengan menggunakan server DNS tertentu, yaitu bitsy.mit.edu.
 ![49567cd9-1419-4ddf-9615-db529bea7615](https://github.com/user-attachments/assets/5e51c37c-2915-479d-bc91-357b97e65580)
 
+## 2. Ipconfig
+Ipconfig berguna untuk mengelola informasi DNS yang tersimpan dalam host. Yang mana host dapat menyimpan catatan DNS yang baru saja diperolehnya. Untuk melihat record yang telah disimpan, setelah prompt C:\> masukkan  perintah berikut:
 
+1) Perintah "ipconfig /all" digunakan untuk menampilkan informasi lengkap konfigurasi jaringan pada komputer. Perintah ini memberikan detail seperti nama host, status koneksi jaringan, alamat IP, subnet mask, gateway, DNS server, serta informasi lain yang berkaitan dengan adaptor jaringan yang digunakan.
