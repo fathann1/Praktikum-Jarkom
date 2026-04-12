@@ -46,4 +46,9 @@ Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter IP Address "
 ![87058418-1c40-4c41-b67a-4f1f6060a36e](https://github.com/user-attachments/assets/f49928a9-3ce0-468e-88a2-b82f21a50284)
 
+3) Buka browser http://www.ietf.org/
+![5662412e-df6d-4397-ad74-8ab15b5f9495](https://github.com/user-attachments/assets/dd1aa45f-db67-45cf-953d-cd4edb13b610)
+
+4) Tambahkan filter lagi ip.addr == 192.168.1.104 && dns.qry.name contains "ietf"
+![14ca8ff6-2317-4ab4-8bff-0401d7af7fb2](https://github.com/user-attachments/assets/9885f7c1-a88c-4a78-b513-6f042969a47a)
 
