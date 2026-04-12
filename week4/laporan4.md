@@ -37,7 +37,7 @@ Ipconfig digunakan untuk mengelola informasi DNS yang tersimpan di komputer (hos
 # 4.4 Tracing DNS dengan Wireshark
 Mempelajari cara memantau dan menganalisis paket data DNS yang dikirim dan diterima oleh komputer, sehingga kita bisa melihat bagaimana permintaan domain dikirim ke server dan bagaimana responsnya diterima. Hal ini berguna untuk memahami cara kerja DNS dan membantu dalam troubleshooting jaringan.
 
-### A. Analisis DNS Request dan Response pada Akses Website (www.ietf.org)
+## A. Analisis DNS Request dan Response pada Akses Website (www.ietf.org)
 Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 
 1) Buka command prompt (CMD) dan ketikan ipconfig untuk menyalin IP Address "192.168.1.104"
@@ -65,8 +65,7 @@ Source Port → 53 (dari server DNS)
 
 Destination Port → 63199 (kembali ke client)
 
-### B. Analisis DNS Menggunakan Perintah nslookup (www.mit.edu)
-## Langkah - Langkah percobaan
+## B. Analisis DNS Menggunakan Perintah nslookup (www.mit.edu)
 Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 
 1) Buka command prompt (CMD) dan ketikan nslookup www.mit.edu
