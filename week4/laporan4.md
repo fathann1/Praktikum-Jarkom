@@ -66,6 +66,7 @@ Source Port → 53 (dari server DNS)
 Destination Port → 63199 (kembali ke client)
 
 ### B. Analisis DNS Menggunakan Perintah nslookup (www.mit.edu)
+## Langkah - Langkah percobaan
 Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 
 1) Buka command prompt (CMD) dan ketikan nslookup www.mit.edu
