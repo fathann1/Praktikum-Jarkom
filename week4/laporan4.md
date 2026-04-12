@@ -29,3 +29,4 @@ Ipconfig digunakan untuk mengelola informasi DNS yang tersimpan di komputer (hos
 ![96d18130-f67f-4d43-af75-50d8e2157673](https://github.com/user-attachments/assets/704a370a-22c9-4111-b996-21908299e008)
 
 4) selanjutnya tulis "ipconfig /flushdns" digunakan untuk menghapus cache DNS di komputer. Dengan menghapus cache ini, sistem akan mengambil ulang data DNS terbaru dari server, dan biasanya dipakai untuk mengatasi masalah koneksi atau error DNS.
+![4381c851-437d-4c95-b320-57f7effc922b](https://github.com/user-attachments/assets/6c9cac13-bc6f-44c1-a2d1-d47e1355f1c9)
