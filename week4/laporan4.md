@@ -74,3 +74,44 @@ Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter DNS, lalu ambil data dari Standard query (request) dan Standard query response dari www.mit.edu
 ![2d0c3659-591f-4806-b8b4-ef7e30d8b502](https://github.com/user-attachments/assets/999e6bbe-def1-4f9a-b4e7-756c7fd25cdb)
 
+## Pertanyaan
+ 1. Port tujuan request dan port sumber dari response
+![03aaa354-5d6e-4ccd-90d7-c1334ad47293](https://github.com/user-attachments/assets/38bc1582-88b8-42d5-9208-0e0ce17be64c)
+
+- DNS request = destination: 53
+![2e7bc122-9a70-4972-96d0-25df0ad2d87e](https://github.com/user-attachments/assets/6c9e3693-d9c8-4bc0-9358-1eda78bfdac5)
+
+- DNS response = Source: 53
+
+2. Alamat IP request
+![e425ea4a-1a4b-443b-9326-eeaf90757f74](https://github.com/user-attachments/assets/291db277-b63e-4ee4-80b4-e821b1a43d4f)
+
+Pada perjobaan tersebut terlihat bahwa request DNS dikirim ke alamat IP 192.168.1.104
+
+3. Type dan answer request
+![46266650-0691-4200-8829-b160be42b5c5](https://github.com/user-attachments/assets/71e4635d-06f6-4886-8004-34bb583a1f2f)
+
+Pada percobaan yang dilakukan, terlihat bahwa tipe yang muncul adalah AAAA (IPv6 Address Record), yaitu untuk mencari alamat IPv6. Pesan ini belum berisi jawaban karena masih berupa permintaan (query) untuk mencari alamat IPv6 dari domain [www.mit.edu](http://www.mit.edu).
+
+## C. Analisis DNS Record NS Menggunakan nslookup (mit.edu)
+1. Buka CMD ketikan nslookup -type=NS mit.edu
+![a05da96d-e2fa-4615-ba26-406200b33ebb](https://github.com/user-attachments/assets/80998167-398e-40d6-8a83-9fdc20ca3314)
+
+2. Buka Wireshark lalu pilih wifi, setelah itu pada bagian filter ketik dns untuk memunculkan bagian dns saja
+![5586f131-531e-4e56-bbf9-c1196989d3a2](https://github.com/user-attachments/assets/b1f64d02-cecc-4155-bc5c-94346ff65591)
+
+3. Ambil data dari Standard query (request) dan Standard query response dari NS mit.edu
+![ee0853fd-5505-417f-bc70-90862e212aee](https://github.com/user-attachments/assets/a1284b5a-4725-4e5c-925d-bee15cfc08f1)
+
+
+## Pertanyaan 
+1. Alamat IP request
+![tampilan](../assets/image/Pertanyaan%201%20Poin%20C.png)
+
+2. Type dan answers request
+![tampilan](../assets/image/Pertanyaan%202%20Poin%20C.png)
+
+Pada percobaan bisa terlihat bahwa Type request dari DNS adalah NS yang artinya tidak mengandung jawaban karena hanya permintaan
+
+3. Answer Response
+![tampilan](../assets/image/Pertanyaan%203%20Poin%20C.png)
