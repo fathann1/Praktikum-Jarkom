@@ -13,4 +13,6 @@ Nslookup adalah perintah yang digunakan untuk melakukan query ke server DNS guna
   <img src="https://github.com/user-attachments/assets/b6f91335-8260-4e9f-ae23-a5aa7c064db2" width="600"/>
 </p>
 
+2) Perintah nslookup -type=NS mit.edu digunakan untuk mengetahui Name Server (NS) yang menangani domain mit.edu. Perintah ini mengirim permintaan ke server DNS untuk melihat server mana saja yang mengelola domain tersebut.
+![3ec2a305-25a8-4099-a65e-b472469d8ccb](https://github.com/user-attachments/assets/1a221639-5f7d-4b0d-9355-836cc6adc873)
 
