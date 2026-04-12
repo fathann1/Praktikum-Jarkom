@@ -35,5 +35,10 @@ Ipconfig digunakan untuk mengelola informasi DNS yang tersimpan di komputer (hos
 ![8e95b9dc-1dd8-4644-bc35-24adac154571](https://github.com/user-attachments/assets/039db82e-a2ad-4ba3-9cd4-9106fac8c1e8)
 
 # 4.4 Tracing DNS dengan Wireshark
-Mempelajari proses memantau dan menganalisis paket data DNS yang dikirim dan diterima oleh komputer melalui jaringan, sehingga pengguna dapat melihat bagaimana permintaan pencarian domain (DNS query) dikirim ke server dan bagaimana responsnya diterima, yang berguna untuk memahami alur kerja DNS serta membantu dalam proses troubleshooting jaringan.
+Mempelajari cara memantau dan menganalisis paket data DNS yang dikirim dan diterima oleh komputer, sehingga kita bisa melihat bagaimana permintaan domain dikirim ke server dan bagaimana responsnya diterima. Hal ini berguna untuk memahami cara kerja DNS dan membantu dalam troubleshooting jaringan.
+
+### A. Analisis DNS Request dan Response pada Akses Website (www.ietf.org)
+Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
+
+1) Buka command prompt (CMD) dan ketikan perintah ipconfig untuk menyalin IP Address "10.217.1.254"
 
