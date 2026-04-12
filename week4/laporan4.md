@@ -40,5 +40,10 @@ Mempelajari cara memantau dan menganalisis paket data DNS yang dikirim dan diter
 ### A. Analisis DNS Request dan Response pada Akses Website (www.ietf.org)
 Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 
-1) Buka command prompt (CMD) dan ketikan perintah ipconfig untuk menyalin IP Address "10.217.1.254"
+1) Buka command prompt (CMD) dan ketikan ipconfig untuk menyalin IP Address "192.168.1.104"
+![cb78eb20-ad87-4ef1-b17e-f3383995bfb4](https://github.com/user-attachments/assets/113fc00d-47c0-4795-895c-2090fc485bb9)
+
+2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter IP Address "
+![87058418-1c40-4c41-b67a-4f1f6060a36e](https://github.com/user-attachments/assets/f49928a9-3ce0-468e-88a2-b82f21a50284)
+
 
