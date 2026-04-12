@@ -28,5 +28,10 @@ Ipconfig digunakan untuk mengelola informasi DNS yang tersimpan di komputer (hos
 2) Tulis "ipconfig /all > networkinfo.txt" digunakan untuk menampilkan semua informasi konfigurasi jaringan lalu menyimpannya ke file networkinfo.txt, sehingga bisa dibaca atau dianalisis tanpa harus melihat di Command Prompt.
 ![96d18130-f67f-4d43-af75-50d8e2157673](https://github.com/user-attachments/assets/704a370a-22c9-4111-b996-21908299e008)
 
+3) habis itu tulis "ipconfig /displaydns" Fungsinya untuk menampilkan dns
+![209cffc3-2927-4df1-b5cf-7fc76b98a4e7](https://github.com/user-attachments/assets/d31c3dc3-c0be-4ac2-b07c-c06ac3053a0b)
+
 4) selanjutnya tulis "ipconfig /flushdns" digunakan untuk menghapus cache DNS di komputer. Dengan menghapus cache ini, sistem akan mengambil ulang data DNS terbaru dari server, dan biasanya dipakai untuk mengatasi masalah koneksi atau error DNS.
-![4381c851-437d-4c95-b320-57f7effc922b](https://github.com/user-attachments/assets/6c9cac13-bc6f-44c1-a2d1-d47e1355f1c9)
+![8e95b9dc-1dd8-4644-bc35-24adac154571](https://github.com/user-attachments/assets/039db82e-a2ad-4ba3-9cd4-9106fac8c1e8)
+
+
