@@ -130,11 +130,15 @@ Pada percobaan terlihat bahwa tipe request DNS adalah NS, yang berarti belum ber
 
 ## Pertanyaan
 1. Alamat IP request
+![72ef48ea-a973-4837-a046-ff4610fa0e29](https://github.com/user-attachments/assets/ecb09d2d-00d1-4d32-a41f-c8c981b52cf7)
 
-Pesan permintaan DNS dikirim ke alamat IP 18.0.72.3. Alamat tersebut merupakan server bitsy.mit.edu yang ditentukan secara manual pada perintah nslookup, sehingga bukan merupakan DNS server lokal
+Pesan permintaan DNS dikirim ke alamat IP 192,168.1.1 Alamat tersebut merupakan server bitsy.mit.edu yang ditentukan secara manual pada perintah nslookup, sehingga bukan merupakan DNS server lokal
 
 2. Type dan answers request
+![3a08bb46-4542-4e10-a2a9-c1897247d7f5](https://github.com/user-attachments/assets/a34b4dba-21f3-42c9-b2ca-48383f698510)
 
 Tipe DNS request adalah A (Address Record). Pesan ini tidak mengandung jawaban karena hanya berupa permintaan
 
-3. Answers response Berdasarkan hasil pada Command Prompt, terlihat bahwa terjadi “DNS request timed out”, yang menunjukkan bahwa server DNS tidak merespon permintaan yang dikirimkan
+3. Berdasarkan hasil di Command Prompt, muncul “DNS request timed out” yang berarti server DNS tidak memberikan respons terhadap permintaan yang dikirim.
+![6a93ab53-b7f7-405c-ac26-a9bd5f756faf](https://github.com/user-attachments/assets/10f41eb8-61f7-4fca-963a-7d1b65ff5e49)
+
