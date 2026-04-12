@@ -52,3 +52,14 @@ Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 4) Tambahkan filter lagi ip.addr == 192.168.1.104 && dns.qry.name contains "ietf"
 ![14ca8ff6-2317-4ab4-8bff-0401d7af7fb2](https://github.com/user-attachments/assets/9885f7c1-a88c-4a78-b513-6f042969a47a)
 
+## Pertanyaan
+1. Apakah DNS menggunakan UDP atau TCP?
+![71487c76-a598-47b7-9853-7cdba3ec646b](https://github.com/user-attachments/assets/e7ac18f6-dfad-403b-92f6-3ac6f37d061e)
+
+Dari percobaan yang di lakukan terilhat bahwa DNS menggunakan TCP
+
+2. Port tujuan pada DNS request & port sumber pada DNS response
+![71487c76-a598-47b7-9853-7cdba3ec646b](https://github.com/user-attachments/assets/e7ac18f6-dfad-403b-92f6-3ac6f37d061e)
+
+Source Port → 53 (dari server DNS)
+Destination Port → 63199 (kembali ke client)
