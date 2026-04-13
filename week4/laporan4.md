@@ -24,7 +24,9 @@ Nslookup adalah perintah yang digunakan untuk melakukan query ke server DNS guna
 - Perintah : nslookup tokopedia.com
 - Domain : www.tokopedia.com
 - Alamat IP : 47.74.244.18
-![1a9dd457-befd-4fe2-8897-f5364cd15a80](https://github.com/user-attachments/assets/afe7f114-6f3e-44b0-aa8b-e31d080ddd01)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/afe7f114-6f3e-44b0-aa8b-e31d080ddd01" width="600"/>
+</p>
 
 2. Mencari DNS otoritatif universitas di Eropa
 - Perintah : nslookup -type=NS ox.ac.uk
