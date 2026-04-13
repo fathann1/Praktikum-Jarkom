@@ -19,6 +19,22 @@ Nslookup adalah perintah yang digunakan untuk melakukan query ke server DNS guna
 3) tulis nslookup [www.aiit.or.kr](http://www.aiit.or.kr) bitsy.mit.edu digunakan untuk mencari informasi DNS dari domain [www.aiit.or.kr](http://www.aiit.or.kr) dengan menggunakan server DNS tertentu, yaitu bitsy.mit.edu.
 ![49567cd9-1419-4ddf-9615-db529bea7615](https://github.com/user-attachments/assets/5e51c37c-2915-479d-bc91-357b97e65580)
 
+## Pertanyaan
+1. Mencari IP server web di Asia
+- Perintah : nslookup tokopedia.com
+- Domain : www.tokopedia.com
+- Alamat IP : 47.74.244.18
+![1a9dd457-befd-4fe2-8897-f5364cd15a80](https://github.com/user-attachments/assets/afe7f114-6f3e-44b0-aa8b-e31d080ddd01)
+
+2. Mencari DNS otoritatif universitas di Eropa
+- Perintah : nslookup -type=NS ox.ac.uk
+![3b973efd-9238-43be-8fc7-0b97908537ec](https://github.com/user-attachments/assets/fdaf7dd8-345a-4d46-a164-77694394215b)
+
+3. Mencari mail server Yahoo melalui DNS tertentu
+- Perintah : nslookup -type=MX yahoo.com 8.8.8.8
+![c37f8f31-f382-43bf-964b-f2f623b02383](https://github.com/user-attachments/assets/31809d8a-06d1-4385-8236-b85be2da6a1d)
+
+
 ## 4.3 Ipconfig
 Ipconfig digunakan untuk mengelola informasi DNS yang tersimpan di komputer (host). Komputer dapat menyimpan hasil DNS yang baru saja didapat. Untuk melihat data yang tersimpan, setelah prompt C:> masukkan perintah berikut:
 
