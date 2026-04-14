@@ -161,3 +161,4 @@ Tipe DNS request adalah A (Address Record). Pesan ini tidak mengandung jawaban k
 <p align="center">
   <img src="https://github.com/user-attachments/assets/10f41eb8-61f7-4fca-963a-7d1b65ff5e49" width="600"/>
 </p>
+
