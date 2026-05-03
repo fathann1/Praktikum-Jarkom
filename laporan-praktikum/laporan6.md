@@ -3,3 +3,4 @@ UDP (User Datagram Protocol) merupakan salah satu protokol pada lapisan transpor
 
 ## Langkah-Langkah Praktikum
 1. Download file http://gaia.cs.umass.edu/wireshark-labs/wireshark-traces.zip
+<img width="334" height="78" alt="image" src="https://github.com/user-attachments/assets/ea90b63f-c1e0-453c-9f84-332519074544" />
