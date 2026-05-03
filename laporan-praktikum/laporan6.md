@@ -27,3 +27,7 @@ UDP (User Datagram Protocol) adalah salah satu protokol di lapisan transport pad
    - Lenght: 2 byte
    - Checksum: 2 byte 
    - di karenakan Header UDP selalu memiliki ukuran tetap 8 byte dan pada percobaan di atas ada 4 field jadi setiap field memiliki panjang 2 byte
+
+3) Length
+   <img width="968" height="309" alt="image" src="https://github.com/user-attachments/assets/d1edf579-9d22-495f-a99f-d64ebb7e1789" />
+   Pada foto tersebut terlihat bahwa nilai Length  adalah 58. Artinya, panjang total paket UDP terdiri dari payload sebesar 50 byte ditambah header UDP sebesar 8 byte, sehingga 50 + 8 = 58. Dengan demikian, nilai Length memang menunjukkan ukuran keseluruhan paket UDP, yaitu gabungan antara header dan payload.
