@@ -1,5 +1,5 @@
 # UDP
-UDP (User Datagram Protocol) merupakan salah satu protokol pada lapisan transport di model TCP/IP yang berfungsi untuk mengirim data secara tanpa koneksi (connectionless). Ini berarti UDP mengirimkan data tanpa harus melakukan proses pembentukan koneksi terlebih dahulu sebelum transmisi berlangsung.
+UDP (User Datagram Protocol) adalah salah satu protokol di lapisan transport pada model TCP/IP yang digunakan untuk mengirim data secara langsung tanpa perlu membangun koneksi terlebih dahulu. Artinya, sebelum data dikirim, tidak ada proses “jabat tangan” seperti pada TCP data bisa langsung dikirim begitu saja.
 
 ## Langkah-Langkah Praktikum
 1. Download file http://gaia.cs.umass.edu/wireshark-labs/wireshark-traces.zip
@@ -20,3 +20,10 @@ UDP (User Datagram Protocol) merupakan salah satu protokol pada lapisan transpor
 1) Field UDP
    <img width="1600" height="947" alt="image" src="https://github.com/user-attachments/assets/1e06b74b-bbdc-4627-93cb-0d82c7052bdb" />
    Jawab: Terdapat 4 field : Source Port, Destination Port, Length, Checksum
+   
+2. Panjang masing - masing dari dari field yang ada pada soal 1 yaitu :
+   - Source port: 2 byte
+   - Destination port: 2 byte
+   - Lenght: 2 byte
+   - Checksum: 2 byte 
+   - di karenakan Header UDP selalu memiliki ukuran tetap 8 byte dan pada percobaan di atas ada 4 field jadi setiap field memiliki panjang 2 byte
