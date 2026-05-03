@@ -44,3 +44,14 @@ UDP (User Datagram Protocol) adalah salah satu protokol di lapisan transport pad
 
    Jadi, rentang nomor port UDP berada dari 0 sampai 65535.
 
+6) Nomor protokol UDP
+   <img width="967" height="404" alt="image" src="https://github.com/user-attachments/assets/534e2fb6-94d5-46a5-b916-cffa8613507c" />
+   Jawab: Nomor protokol UDP adalah 17 (desimal) atau 0x11 (heksadesimal)
+
+7) Hubungan port
+   <img width="1600" height="952" alt="image" src="https://github.com/user-attachments/assets/d3bc5a0f-c751-4ecc-9bc0-0279df3713fe" />
+   <img width="1600" height="948" alt="image" src="https://github.com/user-attachments/assets/ba4c5c1b-bb72-48cd-85a0-579be8cc4781" />
+    Jawab:
+    - REQUEST -> Source Port : 4336 & Destination Port : 161
+    - RESPONSE -> Source Port : 161 & Destination Port : 4336
+    - Nomor port pada paket balasan merupakan kebalikan dari paket permintaan, di mana port sumber dan tujuan saling bertukar
