@@ -35,12 +35,12 @@ UDP (User Datagram Protocol) adalah salah satu protokol di lapisan transport pad
 4) Jumlah maksimum byte UDP
    Jawab: Header UDP memiliki ukuran tetap sebesar 8 byte, sementara ukuran maksimum paket IP adalah 65.535 byte. Pada IPv4, header IP umumnya berukuran 20 byte. Jadi, untuk menghitung kapasitas maksimum data (payload) UDP, kita kurangi total ukuran paket IP dengan header IP dan header UDP:
 
-65.535 − 20 − 8 = 65.507 byte.
+   65.535 − 20 − 8 = 65.507 byte.
 
-Dengan demikian, ukuran maksimum payload yang bisa dikirim menggunakan UDP adalah 65.507 byte.
+   Dengan demikian, ukuran maksimum payload yang bisa dikirim menggunakan UDP adalah 65.507 byte.
 
 5) Port terbesar
     Jawab: Nomor port terbesar pada protokol UDP adalah 65535. Hal ini karena field **source port** dan **destination port** di header UDP masing-masing memiliki ukuran 16 bit. Dengan 16 bit, nilai maksimum yang bisa direpresentasikan adalah 2¹⁶ − 1, yaitu 65535.
 
-Jadi, rentang nomor port UDP berada dari 0 sampai 65535.
+   Jadi, rentang nomor port UDP berada dari 0 sampai 65535.
 
