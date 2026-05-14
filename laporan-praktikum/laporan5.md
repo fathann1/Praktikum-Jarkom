@@ -3,15 +3,16 @@ UDP (User Datagram Protocol) adalah salah satu protokol di lapisan transport pad
 
 ## Langkah-Langkah Praktikum
 1. Download file http://gaia.cs.umass.edu/wireshark-labs/wireshark-traces.zip
+
    <img width="401" height="164" alt="image" src="https://github.com/user-attachments/assets/1fcc86aa-e487-49e6-a524-9bef9d42a7d7" />
 
-2. Extract file dan cari file http-ethereal-trace-5
+3. Extract file dan cari file http-ethereal-trace-5
    <img width="1206" height="129" alt="image" src="https://github.com/user-attachments/assets/d4648a58-ba28-42c4-b9d3-3074e022b2d6" />
 
-3. Klik kanan pada file tersebut, kemudian buka dengan wireshark
+4. Klik kanan pada file tersebut, kemudian buka dengan wireshark
    <img width="1600" height="948" alt="image" src="https://github.com/user-attachments/assets/8dda4c6f-4f67-44c5-8227-227c029547d0" />
 
-4. Lakukan filter UDP dan pilih salah satu paket UDP
+5. Lakukan filter UDP dan pilih salah satu paket UDP
    <img width="1600" height="951" alt="image" src="https://github.com/user-attachments/assets/4750973f-101b-4c70-884e-fd6c76b37709" />
 
 
