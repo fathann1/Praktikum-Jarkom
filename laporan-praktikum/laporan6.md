@@ -124,5 +124,11 @@ Langkah-Langkahnya:
       <img width="1267" height="916" alt="image" src="https://github.com/user-attachments/assets/629367a9-c8c1-4829-936b-f90861e8f86d" />
     - Fase *slow start* terjadi pada awal koneksi (sekitar 0 hingga ±1 detik) dengan pertumbuhan data secara eksponensial hingga mencapai *threshold*, lalu berubah menjadi fase *congestion avoidance* dengan pertumbuhan linear. Data nyata menunjukkan sedikit perbedaan dari teori karena dipengaruhi kondisi jaringan seperti delay dan variasi ACK. Secara keseluruhan, koneksi TCP pada grafik terlihat cukup stabil karena tidak ada penurunan drastis yang menunjukkan *packet loss* besar atau *timeout*, meskipun grafik tidak sepenuhnya mulus seperti model TCP ideal.
 
+2. Identifikasi Slow Start & Congestion Avoidance (alice.txt)
 
-
+    - Start wireshark
+    - Uploud file alice.txt ke http://gaia.cs.umass.edu/wireshark-labs/TCP-wireshark-file1.html
+    - Kembali ke wireshark dan filter "TCP"
+    - Klik Statistics -> TCP Stream Graph -> Time-Sequence Graph (Stevens)
+      
+    - Pada grafik kedua, fase *slow start* terjadi di awal koneksi dengan pertumbuhan eksponensial yang lebih cepat, kemudian segera beralih ke fase *congestion avoidance*. Hal ini menunjukkan bahwa koneksi Wi-Fi memiliki respon yang lebih cepat dibanding sebelumnya, tetapi juga lebih rentan terhadap variasi delay. Secara umum koneksi tetap stabil, meskipun perilakunya tidak sepenuhnya sesuai dengan model TCP ideal karena dipengaruhi kondisi jaringan nirkabel.
