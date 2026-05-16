@@ -130,5 +130,5 @@ Langkah-Langkahnya:
     - Uploud file alice.txt ke http://gaia.cs.umass.edu/wireshark-labs/TCP-wireshark-file1.html
     - Kembali ke wireshark dan filter "TCP"
     - Klik Statistics -> TCP Stream Graph -> Time-Sequence Graph (Stevens)
-      
+      <img width="1272" height="907" alt="image" src="https://github.com/user-attachments/assets/9d0e0aac-6184-4bc0-a09b-831922781e09" />
     - Pada grafik kedua, fase *slow start* terjadi di awal koneksi dengan pertumbuhan eksponensial yang lebih cepat, kemudian segera beralih ke fase *congestion avoidance*. Hal ini menunjukkan bahwa koneksi Wi-Fi memiliki respon yang lebih cepat dibanding sebelumnya, tetapi juga lebih rentan terhadap variasi delay. Secara umum koneksi tetap stabil, meskipun perilakunya tidak sepenuhnya sesuai dengan model TCP ideal karena dipengaruhi kondisi jaringan nirkabel.
