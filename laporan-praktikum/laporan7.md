@@ -1,7 +1,5 @@
-# Modul 7 - SOCKET PROGRAMMING
+# Modul 7 SOCKET PROGRAMMING
 
-
-## Pengertian Socket Programming
 Socket programming adalah metode komunikasi antar komputer dalam jaringan dengan menggunakan socket sebagai media pertukaran data. Dalam prosesnya terdapat dua peran utama, yaitu client yang mengirim permintaan dan server yang menerima serta memberikan respons. Komunikasi ini umumnya menggunakan protokol TCP yang lebih stabil dan menjamin data terkirim dengan benar, atau UDP yang lebih cepat namun tanpa jaminan keandalan pengiriman. Dengan socket programming, perangkat dalam jaringan dapat saling bertukar data secara langsung.
 
 ## Implementasi TCP
