@@ -40,6 +40,7 @@ Langkah-Langkahnya:
 2) IP dan port TCP server mencari data di filter "HTTP" dan pilih paket HTTP/1.1 200 OK
 
       <img width="1600" height="950" alt="image" src="https://github.com/user-attachments/assets/98fc4572-53f9-4c85-985c-f86591263c94" />
+      
     - IP Server: 192.168.100.132
     
     - Port server : 80
