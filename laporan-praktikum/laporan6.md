@@ -24,5 +24,14 @@ Langkah-Langkahnya:
     - Paket SYN digunakan untuk memulai koneksi TCP antara client dan server melalui proses *three-way handshake*, sehingga koneksi dapat dipastikan siap sebelum pertukaran data dilakukan. Paket ini tidak digunakan untuk mengirim file secara langsung. Setelah koneksi berhasil terbentuk, file akan dikirim dalam beberapa segmen kecil melalui TCP. Pembagian data menjadi bagian-bagian kecil ini bertujuan agar proses pengiriman lebih efisien, mudah dikontrol, serta membantu memastikan seluruh data dapat diterima dengan benar oleh tujuan.
     
     <img width="971" height="549" alt="image" src="https://github.com/user-attachments/assets/0c7fe65e-a25e-47aa-8ed9-8cecd7ead1df" />
+    
     - Setelah proses upload selesai, server akan mengirimkan respons HTTP/1.1 200 OK. Pesan ini menandakan bahwa file telah berhasil diterima dan diproses oleh server tanpa kendala. Setelah itu, halaman web menampilkan pesan “Congratulations” sebagai tanda bahwa proses upload file berhasil dilakukan dengan sukses.
 
+### Menjawab Pertanyaan
+1) IP dan port TCP komputer klien mencari data di filter "HTTP" dan pilih paket POST
+    - IP Server: 128.119.245.12
+    
+    <img width="1600" height="946" alt="image" src="https://github.com/user-attachments/assets/842f32dd-c86f-4835-93e0-2b59911b4282" />
+    - Port server : 54470
+   
+    <img width="951" height="432" alt="image" src="https://github.com/user-attachments/assets/cf4e4116-cf77-4806-b812-0f4587df6d38" />
