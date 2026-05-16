@@ -35,3 +35,9 @@ Langkah-Langkahnya:
     - Port server : 54470
    
     <img width="951" height="432" alt="image" src="https://github.com/user-attachments/assets/cf4e4116-cf77-4806-b812-0f4587df6d38" />
+
+2) IP dan port TCP server mencari data di filter "HTTP" dan pilih paket HTTP/1.1 200 OK
+
+    <img width="1600" height="950" alt="image" src="https://github.com/user-attachments/assets/98fc4572-53f9-4c85-985c-f86591263c94" />
+    - IP Server: 192.168.100.132
+    - Port server : 80
