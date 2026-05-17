@@ -81,3 +81,76 @@ serverSocket.close() # menutup socket
 4. Server memproses data
 5. Server mengirim hasil ke client
 6. Client menampilkan hasil
+7. Jika kita ketik exit kita akan keluar dan server berhenti
+
+Output Contoh di terminal:
+<img width="1132" height="290" alt="image" src="https://github.com/user-attachments/assets/6aa56b73-7c3c-4123-82f3-5f54ff840a14" />
+
+
+## Implementasi UDP
+### UDP Client
+```python
+from socket import *
+
+serverName = 'localhost'  # ganti dari IP spesifik ke localhost
+serverPort = 12000
+clientSocket = socket(AF_INET, SOCK_DGRAM)
+
+print("[SYSTEM] Masukkan pesan (ketik 'exit' untuk keluar)\n")
+
+while True:
+    message = input("> ")
+
+    if not message:
+        continue
+
+    clientSocket.sendto(message.encode(), (serverName, serverPort))
+
+    if message.lower() == 'exit':
+        print("[SYSTEM] Keluar dari program.")
+        break
+
+    balasan, _ = clientSocket.recvfrom(2048)
+    print(f"[SERVER] pesan: {balasan.decode()}\n")
+
+clientSocket.close()
+print("[SYSTEM] Socket ditutup.")
+```
+
+### UDP Server
+```python
+from socket import *
+
+serverPort = 12000
+serverSocket = socket(AF_INET, SOCK_DGRAM)
+serverSocket.bind(('', serverPort))
+
+print(f"[SYSTEM] Server UDP siap di port {serverPort}")
+
+while True:
+    message, clientAddress = serverSocket.recvfrom(2048)
+    original = message.decode().strip()
+    print(f"[SERVER] Diterima: {original}")
+
+    if original.lower() == 'exit':
+        print("[SYSTEM] Server dimatikan.")
+        serverSocket.sendto("Server dimatikan.".encode(), clientAddress)
+        break
+
+    balasan = original.upper()
+    print(f"[SERVER] Mengirim balik: {balasan}")
+    serverSocket.sendto(balasan.encode(), clientAddress)
+
+serverSocket.close()
+```
+### Alur UDP
+1. Server dijalankan
+2. Client langsung mengirim data tanpa koneksi
+3. Server menerima data
+4. Server memproses
+5. Server mengirim balasan
+6. Client menerima hasil
+7. Jika kita ketik exit kita akan keluar dan server berhenti
+
+Output Contoh di terminal:
+<img width="1147" height="466" alt="image" src="https://github.com/user-attachments/assets/5f4bbbd3-887c-4128-b813-df5ff275095e" />
