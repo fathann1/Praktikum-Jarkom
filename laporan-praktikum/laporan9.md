@@ -1,4 +1,9 @@
 # Modul 9  WEB SERVER
+Nama       : Muhammad Rajwa Al Fathan Koessaputra  
+NIM        : 103072400113  
+Kelas      : IF-04-05  
+Mata Kuliah: Jaringan Komputer  
+__________________________________________
 ## Web Server
 Web server adalah bagian penting dalam komunikasi di internet. Web server bertugas menerima permintaan dari pengguna melalui browser, lalu mengirimkan halaman web atau data yang diminta. Komunikasi ini biasanya menggunakan protokol HTTP yang berjalan di atas TCP.
 
