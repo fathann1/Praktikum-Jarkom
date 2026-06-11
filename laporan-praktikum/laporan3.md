@@ -1,4 +1,9 @@
 # Modul 3
+Nama       : Muhammad Rajwa Al Fathan Koessaputra  
+NIM        : 103072400113  
+Kelas      : IF-04-05  
+Mata Kuliah: Jaringan Komputer  
+__________________________________________
 HTTP
 ## Modul 3.2 Basic HTTP GET/response interaction
 Pada praktikum week 2 ini masih melanjutkan pembahasan pada modul 3 mengenai HTTP. Namun, pada bagian ini lebih difokuskan pada pemahaman tentang interaksi dasar antara HTTP GET dan response yang terjadi antara client dan server.
