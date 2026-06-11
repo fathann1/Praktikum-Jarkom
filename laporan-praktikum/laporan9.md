@@ -2,6 +2,10 @@
 ## Web Server
 Web server adalah bagian penting dalam komunikasi di internet. Web server bertugas menerima permintaan dari pengguna melalui browser, lalu mengirimkan halaman web atau data yang diminta. Komunikasi ini biasanya menggunakan protokol HTTP yang berjalan di atas TCP.
 
+##
+Tujuan Praktikum 
+1.	Mahasiswa bisa membuat program web server sederhana berbasis TCP socket programming
+
 ## Langkah-Langkah
   1. mebuat folder week9
   2. Membuat file serverweb.py di
@@ -61,3 +65,17 @@ while True:
 serverSocket.close()
 sys.exit()
 ```
+  4. Setelah itu membuat file HelloWorld.html
+  5. lalu diisi
+```html
+<html>
+<head>
+    <title>Test Server</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Ini hasil server Python TCP</p>
+</body>
+</html>
+```
+  
