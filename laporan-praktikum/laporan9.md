@@ -4,7 +4,7 @@ Web server adalah bagian penting dalam komunikasi di internet. Web server bertug
 
 ##
 Tujuan Praktikum 
-1.	Mahasiswa bisa membuat program web server sederhana berbasis TCP socket programming
+- Mahasiswa bisa membuat program web server sederhana berbasis TCP socket programming
 
 ## Langkah-Langkah
   1. mebuat folder week9
