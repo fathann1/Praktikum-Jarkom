@@ -1,4 +1,4 @@
-# Modul 10 - DHCP
+# Modul 11 - DHCP
 Nama       : Muhammad Rajwa Al Fathan Koessaputra  
 NIM        : 103072400113  
 Kelas      : IF-04-05  
