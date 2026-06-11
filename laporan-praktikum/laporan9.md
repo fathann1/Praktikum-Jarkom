@@ -91,3 +91,5 @@ sys.exit()
 
 <img width="1600" height="714" alt="image" src="https://github.com/user-attachments/assets/d57e7bd2-c97e-4d0c-9fb5-d8d76ab76c48" />
 
+Server akan menampilkan pesan "404 Not Found" jika file yang diminta tidak tersedia. Hal ini menunjukkan bahwa server dapat menangani permintaan yang berhasil maupun yang gagal dengan baik.
+Program dimulai dengan membuat socket TCP menggunakan library socket. Setelah itu, server dijalankan pada port tertentu dan menunggu koneksi dari klien. Saat klien terhubung, server menerima request HTTP dan membaca nama file yang diminta. Jika file ditemukan, server mengirimkan respons 200 OK beserta isi file HTML. Jika file tidak ditemukan, server mengirimkan respons 404 Not Found. Program ini hanya dapat melayani satu klien pada satu waktu karena menggunakan metode single-threaded.
