@@ -40,16 +40,16 @@ DORA adalah proses komunikasi antara klien dan server DHCP untuk mendapatkan IP 
 
 1. Discover
 
-Client mengirim pesan DHCP Discover untuk mencari server DHCP yang tersedia. Karena belum memiliki IP address, paket dikirim menggunakan alamat 0.0.0.0 dan bersifat broadcast.
+   Client mengirim pesan DHCP Discover untuk mencari server DHCP yang tersedia. Karena belum memiliki IP address, paket dikirim menggunakan alamat 0.0.0.0 dan bersifat broadcast.
 
 2. Offer
 
-Server DHCP merespons dengan DHCP Offer, yang berisi penawaran IP address dan konfigurasi jaringan lainnya.
+   Server DHCP merespons dengan DHCP Offer, yang berisi penawaran IP address dan konfigurasi jaringan lainnya.
 
 3. Request
 
-Client memilih salah satu penawaran lalu mengirim DHCP Request sebagai tanda persetujuan untuk menggunakan IP address tersebut.
+   Client memilih salah satu penawaran lalu mengirim DHCP Request sebagai tanda persetujuan untuk menggunakan IP address tersebut.
 
 4. Acknowledgement (ACK)
 
-Server mengirim DHCP ACK untuk mengonfirmasi pemberian IP address. Setelah itu, client dapat mulai menggunakan jaringan.
+   Server mengirim DHCP ACK untuk mengonfirmasi pemberian IP address. Setelah itu, client dapat mulai menggunakan jaringan.
