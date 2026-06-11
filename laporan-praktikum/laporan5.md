@@ -1,4 +1,9 @@
 # Modul 5 UDP
+Nama       : Muhammad Rajwa Al Fathan Koessaputra  
+NIM        : 103072400113  
+Kelas      : IF-04-05  
+Mata Kuliah: Jaringan Komputer  
+__________________________________________
 UDP (User Datagram Protocol) adalah salah satu protokol di lapisan transport pada model TCP/IP yang digunakan untuk mengirim data secara langsung tanpa perlu membangun koneksi terlebih dahulu. Artinya, sebelum data dikirim, tidak ada proses “jabat tangan” seperti pada TCP data bisa langsung dikirim begitu saja.
 
 ## Langkah-Langkah Praktikum

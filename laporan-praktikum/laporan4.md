@@ -1,4 +1,9 @@
 # Modul 4 DNS
+Nama       : Muhammad Rajwa Al Fathan Koessaputra  
+NIM        : 103072400113  
+Kelas      : IF-04-05  
+Mata Kuliah: Jaringan Komputer  
+__________________________________________
 
 DNS (Domain Name System) adalah sistem yang mengubah nama domain (seperti google.com) menjadi alamat IP. DNS bekerja dengan mengirim permintaan ke server DNS lokal, lalu menerima hasilnya.
 

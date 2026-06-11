@@ -1,4 +1,9 @@
 # Modul 6 TCP
+Nama       : Muhammad Rajwa Al Fathan Koessaputra  
+NIM        : 103072400113  
+Kelas      : IF-04-05  
+Mata Kuliah: Jaringan Komputer  
+__________________________________________
 TCP (Transmission Control Protocol) merupakan protokol pada lapisan transport yang bersifat connection-oriented, yaitu proses pengiriman data harus diawali dengan pembentukan koneksi terlebih dahulu. TCP memastikan data dikirim secara andal melalui penggunaan mekanisme seperti sequence number, acknowledgment, flow control, dan congestion control.
 
 ## Analisis Transfer File Menggunakan Protocol TCP
