@@ -92,4 +92,100 @@ sys.exit()
 <img width="1600" height="714" alt="image" src="https://github.com/user-attachments/assets/d57e7bd2-c97e-4d0c-9fb5-d8d76ab76c48" />
 
 Server akan menampilkan pesan "404 Not Found" jika file yang diminta tidak tersedia. Hal ini menunjukkan bahwa server dapat menangani permintaan yang berhasil maupun yang gagal dengan baik.
+
 Program dimulai dengan membuat socket TCP menggunakan library socket. Setelah itu, server dijalankan pada port tertentu dan menunggu koneksi dari klien. Saat klien terhubung, server menerima request HTTP dan membaca nama file yang diminta. Jika file ditemukan, server mengirimkan respons 200 OK beserta isi file HTML. Jika file tidak ditemukan, server mengirimkan respons 404 Not Found. Program ini hanya dapat melayani satu klien pada satu waktu karena menggunakan metode single-threaded.
+
+## Latihan Web Tambahan
+Disini kita membuat server dan web kita sendiri.
+1. Buka VScode dan masuk ke folder tadi
+2. buka file server.py
+3. Tulis ulang codenya seperti ini:
+
+```python
+from socket import *
+import threading
+
+def handle_client(connectionSocket):
+    try:
+        # menerima pesan user
+        message = connectionSocket.recv(1024).decode() # decode = 10101010 = "message"
+
+        # index.html, hello.html
+        # message isinya = /GET /index.html HTTP/1.1
+        message = message[4:15]
+        print(message)
+        # filename = message.split()[1]
+
+        # membuka index.html serta menghilangkan "/"
+        f = open(message[1:])
+
+        # membaca file html
+        outputData = f.read()
+
+        # kirim respon
+        connectionSocket.send(
+            "HTTP/1.1 200 OK\r\n\r\n".encode()
+        )
+
+        # kirim data
+        connectionSocket.sendall(outputData.encode())
+
+        # tutup koneksi
+        connectionSocket.close()
+    
+    except IOError:
+        # kirim respon bila tidak ditemukan
+        connectionSocket.send(
+            "HTTP/1.1 404 Not Found\r\n\r\n".encode()
+        )
+
+        # kirim data
+        connectionSocket.send(
+            "<h1>404 Not Found</h1>".encode()
+        )
+
+        # tutup koneksinya
+        connectionSocket.close()
+
+
+serverSocket = socket(AF_INET, SOCK_STREAM)
+serverSocket.bind(('', 6789))
+serverSocket.listen(5) # dapat menerima sebanyak 5 client
+print("[SYSTEM] server is running...")
+
+while True:
+    connectionSocket, addr =  serverSocket.accept()
+
+    # membuat thread dan target threadnya, beseerta parameter
+    thread = threading.Thread(
+        target = handle_client,
+        args = (connectionSocket,)
+        )
+    # menjalankan
+    thread.start()
+```
+4. lalu kita buat "index.html" nya
+5. tulis seperti ini:
+
+```html
+<html>
+<head>
+    <title>Web Fathan Gaming</title>
+</head>
+<body>
+    <h1>Hallo aku fathan</h1>
+    <p>Disini web servernya sudah bisa dan selamat datang di web fathan gaming</p>
+</body>
+</html>
+```
+
+## Hasilnya
+1. Seperti tadi kita buka terminal lalu ketik "py serverweb.py" lalu di enter
+2. Setelah itu Buka browser ketikan URL "http://localhost:6789/Index.html"
+3. Maka akan muncul tampilan seperti ini:
+
+<img width="1600" height="621" alt="image" src="https://github.com/user-attachments/assets/8ed3e9a4-13fa-4597-874d-b0de9dabd472" />
+
+4. Selesai
+
+Server menggunakan multithreading untuk melayani beberapa klien secara bersamaan. Setiap koneksi dijalankan pada thread terpisah sehingga server dapat menangani banyak permintaan tanpa harus menunggu proses sebelumnya selesai.
