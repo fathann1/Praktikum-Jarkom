@@ -4,5 +4,5 @@ NIM        : 103072400113
 Kelas      : IF-04-05  
 Mata Kuliah: Jaringan Komputer  
 __________________________________________
-## Tujuan Praktikum
-1. Mahasiswa dapat menginvestigasi cara kerja protokol IP menggunakan Wireshark
+Tujuan Praktikum
+- Mahasiswa dapat menginvestigasi cara kerja protokol IP menggunakan Wireshark
