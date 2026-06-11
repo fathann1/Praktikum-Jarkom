@@ -8,7 +8,7 @@ Tujuan Praktikum
 
 ## Langkah-Langkah
   1. mebuat folder week9
-  2. Membuat file serverweb.py di
+  2. Membuat file serverweb.py di VScode
   3. code :
 
 ```python
@@ -78,4 +78,16 @@ sys.exit()
 </body>
 </html>
 ```
-  
+
+## Hasilnya
+1. Kita buka terminal lalu ketik ini "py serverweb.py" lalu di enter
+2. Setelah itu Buka browser ketikan URL "http://localhost:6789/HelloWorld.html"
+3. Maka akan muncul tampilan seperti ini:
+
+<img width="1600" height="606" alt="image" src="https://github.com/user-attachments/assets/dc70b55c-0d2f-4fcf-b3a8-d4e5273124d2" />
+
+4. Lalu buka tab lainnya dan ketikkan "http://localhost:6789/salah.html"
+5. Maka akan muncul tampilan seperti ini:
+
+<img width="1600" height="714" alt="image" src="https://github.com/user-attachments/assets/d57e7bd2-c97e-4d0c-9fb5-d8d76ab76c48" />
+
