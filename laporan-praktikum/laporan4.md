@@ -6,7 +6,7 @@ Mata Kuliah: Jaringan Komputer
 __________________________________________
 
 Tujuan Praktikum
-- Kita sebagai mahasiswa dapat mempelajari cara kerja protokol WIFI menggunakan Wireshark.
+- Kita sebagai mahasiswa dapat mempelajari cara kerja protokol DNS menggunakan Wireshark.
 
 DNS (Domain Name System) adalah sistem yang mengubah nama domain (seperti google.com) menjadi alamat IP. DNS bekerja dengan mengirim permintaan ke server DNS lokal, lalu menerima hasilnya.
 
