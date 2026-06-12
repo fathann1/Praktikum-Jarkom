@@ -40,3 +40,26 @@ Agar proses pencarian tidak dilakukan berulang kali, hasil pemetaan IP dan MAC A
 - ARP Cache
 
   ARP Cache adalah tempat penyimpanan sementara yang berisi daftar pasangan alamat IP dan MAC Address yang telah diketahui sebelumnya. Keberadaan ARP Cache membantu mengurangi jumlah ARP Request sehingga komunikasi menjadi lebih cepat dan  efisien.
+
+## Analisis ARP pada Wireshark
+1. Buka Command Prompt (CMD) sebagai Administrator, lalu jalankan perintah arp -d * untuk menghapus seluruh isi ARP Cache. Setelah itu, komputer akan melakukan proses ARP kembali saat berkomunikasi dengan perangkat lain di jaringan.
+
+  <img width="1088" height="642" alt="image" src="https://github.com/user-attachments/assets/e14db040-fb3c-44b2-981b-1b14118cbad8" />
+
+2. Buka **Wireshark**, kemudian pilih menu **Analyze → Enabled Protocols → IPv4** untuk mengaktifkan atau memeriksa protokol IPv4 yang akan dianalisis.
+
+   <img width="1230" height="777" alt="image" src="https://github.com/user-attachments/assets/cfea1cdb-fded-46c6-930f-23bada4bfbc7" />
+
+3. Start capture Wireshark
+4. Membuka browser dan mengakses: http://gaia.cs.umass.edu/wireshark-labs/HTTP-ethereal-lab-file3.html
+5. Stop capture Wireshark
+6. Ketik filter: arp
+
+   <img width="1600" height="948" alt="image" src="https://github.com/user-attachments/assets/73140040-9f63-4de0-aaba-53508128aa07" />
+
+7. Pilih salah satu paket untuk diCek
+
+   <img width="1600" height="948" alt="image" src="https://github.com/user-attachments/assets/997f0c02-68f2-4546-b3fd-085c66ca7f64" />
+
+**Kita Cek Paket**
+Berdasarkan hasil capture Wireshark, paket yang dipilih adalah ARP Request (Opcode = request/1). Perangkat dengan IP 192.168.68.1 dan MAC address 3c:6a:d2:c6:a6:cc (TPLink_c6:a6:cc) mengirimkan permintaan untuk mencari MAC address milik IP 192.168.68.136. Karena MAC address tujuan belum diketahui, Target MAC address bernilai ff:ff:ff:ff:ff:ff dan paket dikirim ke alamat Broadcast (ff:ff:ff:ff:ff:ff) agar diterima seluruh perangkat di jaringan lokal. Paket ini pada dasarnya menanyakan: "Siapa yang memiliki IP 192.168.68.136?" Dari hasil tersebut dapat disimpulkan bahwa ARP digunakan untuk menerjemahkan alamat IP menjadi alamat MAC sebelum perangkat dapat mengirim frame Ethernet ke tujuan yang benar di jaringan lokal.
