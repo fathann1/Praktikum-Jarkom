@@ -41,3 +41,47 @@ Paket ICMP terdiri dari beberapa bagian penting, yaitu:
    Berisi data tambahan yang dikirim bersama pesan ICMP, misalnya data yang digunakan pada proses ping.
 
 Dengan komponen-komponen tersebut, ICMP dapat membantu administrator jaringan dalam memantau konektivitas, mendeteksi kesalahan, dan menganalisis kinerja jaringan.
+
+## Analisis ICMP yang Dihasilkan Oleh Ping
+1. Pertama kitabuka wireshark dan pilih jaringan Wifi
+2. Buka CMD, kemudian ketikan perintah ping -n 10 www.ust.hk
+
+<img width="982" height="628" alt="image" src="https://github.com/user-attachments/assets/d0c3902f-61cc-4b65-90c4-80dbc032ef4b" />
+
+3. Stop capture pada wireshark
+4. Isi filter ICMP
+5. Pilih dan expand salah satu paket ICMP Echo Request
+6. Pilih dan expand salah satu paket ICMP Echo Reply
+
+## Kita Cek
+- Pesan ICMP yang dihasilkan program Ping
+  <img width="1600" height="948" alt="image" src="https://github.com/user-attachments/assets/83809a3c-1e5e-4f7e-8a0f-67f0200c821f" />
+
+  <img width="1918" height="1133" alt="image" src="https://github.com/user-attachments/assets/fd1451a1-cb1e-4415-a5c6-fa2b445dae37" />
+  
+  Hasil capture Wireshark menunjukkan adanya dua tipe pesan ICMP yang dihasilkan oleh program ping, yakni Echo Request dan Echo Reply. Berdasarkan data yang tertangkap, ping dilakukan sebanyak 10 kali yang dapat diidentifikasi dari nilai sequence number yang tercatat mulai dari seq=1/256 hingga seq=10/2560. Setiap satu kali proses ping akan menghasilkan satu paket request dan satu paket reply, sehingga total keseluruhan paket ICMP yang tertangkap berjumlah 20 paket. Di luar paket ping tersebut, terdapat satu paket bertipe Destination Unreachable yang berasal dari host 35.211.225.161, yang mengindikasikan bahwa port pada tujuan tidak dapat dijangkau.
+
+- Format dan Isi Pesan ICMP
+  1. ICMP Echo Request
+     
+     <img width="1417" height="840" alt="image" src="https://github.com/user-attachments/assets/92234d76-3c88-4f75-87a2-31964d36737f" />
+
+       (expand packet 413 — Frame 413, 74 bytes, src: 192.168.68.155 → dst: 143.89.209.9)
+
+      - Type = 8 → menandakan paket adalah Echo Request atau permintaan ping
+      - Code = 0 → menunjukkan tidak ada detail error tambahan pada pesan ICMP tersebut
+      - Checksum = 0x4d5a [correct] → checksum valid sehingga paket tidak mengalami kerusakan/error saat dikirim
+      - Identifier = 1 (0x0001) → digunakan sebagai penanda agar Echo Reply dapat dikenali sebagai balasan dari request yang sama
+      - Sequence Number = 1 (0x0001) → menunjukkan bahwa paket ini merupakan urutan ping ke-1 yang dikirim
+  2. ICMP Echo Reply
+     
+     <img width="1417" height="840" alt="image" src="https://github.com/user-attachments/assets/827ee022-45a5-40bb-94df-9b406f563709" />
+
+       (expand packet 414 — Frame 414, 78 bytes, src: 143.89.209.9 → dst: 192.168.68.155)
+
+      - Type = 0 → menunjukkan bahwa paket merupakan Echo Reply atau balasan ping
+      - Code = 0 → tidak terdapat informasi tambahan atau error pada paket balasan
+      - Checksum = 0x555a [correct] → checksum valid sehingga paket reply diterima tanpa kerusakan data
+      - Identifier = 1 (0x0001) → identifier sama dengan paket request agar sistem dapat mencocokkan balasan dengan permintaan sebelumnya
+      - Sequence Number = 1 (0x0001) → menunjukkan bahwa paket reply ini merupakan balasan untuk paket request urutan ke-1
+      - Response time = 74,827 ms → waktu yang dibutuhkan dari request dikirim hingga reply diterima
