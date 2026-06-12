@@ -5,7 +5,7 @@ Kelas      : IF-04-05
 Mata Kuliah: Jaringan Komputer  
 __________________________________________
 Tujuan Praktikum
-- Mahasiswa dapat mempelajari cara kerja protokol IP menggunakan Wireshark.
+- Kita sebagai mahasiswa dapat mempelajari cara kerja protokol DHCP menggunakan Wireshark.
 
 ## 1. IP address
 IP Address (Internet Protocol Address) adalah alamat unik yang digunakan untuk mengenali perangkat dalam jaringan. IP address berfungsi untuk membantu data dikirim ke perangkat tujuan dengan benar.
