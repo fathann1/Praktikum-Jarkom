@@ -8,6 +8,7 @@ __________________________________________
 Tujuan Praktikum
 - Kita sebagai mahasiswa dapat mempelajari cara kerja protokol DNS menggunakan Wireshark.
 
+## DNS
 DNS (Domain Name System) adalah sistem yang mengubah nama domain (seperti google.com) menjadi alamat IP. DNS bekerja dengan mengirim permintaan ke server DNS lokal, lalu menerima hasilnya.
 
 Sebenarnya, proses yang lebih rumit terjadi di sisi server. Server DNS yang tersusun secara hierarki akan saling berkomunikasi untuk mencari jawaban, baik secara rekursif maupun iteratif, tanpa terlihat oleh pengguna.
