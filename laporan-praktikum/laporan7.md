@@ -5,6 +5,10 @@ Kelas      : IF-04-05
 Mata Kuliah: Jaringan Komputer  
 __________________________________________
 
+Tujuan Praktikum
+- Kita sebagai mahasiswa dapat mempelajari cara kerja protokol Socket Programing menggunakan Wireshark.
+
+## Socket Programing
 Socket programming adalah metode komunikasi antar komputer dalam jaringan dengan menggunakan socket sebagai media pertukaran data. Dalam prosesnya terdapat dua peran utama, yaitu client yang mengirim permintaan dan server yang menerima serta memberikan respons. Komunikasi ini umumnya menggunakan protokol TCP yang lebih stabil dan menjamin data terkirim dengan benar, atau UDP yang lebih cepat namun tanpa jaminan keandalan pengiriman. Dengan socket programming, perangkat dalam jaringan dapat saling bertukar data secara langsung.
 
 ## Implementasi TCP
