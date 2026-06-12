@@ -51,7 +51,7 @@ Agar proses pencarian tidak dilakukan berulang kali, hasil pemetaan IP dan MAC A
    <img width="1230" height="777" alt="image" src="https://github.com/user-attachments/assets/cfea1cdb-fded-46c6-930f-23bada4bfbc7" />
 
 3. Start capture Wireshark
-4. Membuka browser dan mengakses: http://gaia.cs.umass.edu/wireshark-labs/HTTP-ethereal-lab-file3.html
+4. Membuka browser dan ketik http://gaia.cs.umass.edu/wireshark-labs/HTTP-ethereal-lab-file3.html
 5. Stop capture Wireshark
 6. Ketik filter: arp
 
