@@ -87,10 +87,12 @@ Dengan komponen-komponen tersebut, ICMP dapat membantu administrator jaringan da
       - Response time = 74,827 ms → waktu yang dibutuhkan dari request dikirim hingga reply diterima
 
 ## Analisis ICMP yang Dihasilkan Oleh Traceroute
-1. Bukak wireshark dan pilih salah satu jaringan (Wifi), lalu aktifkan / capture
+1. Kita buka wireshark lagi lalu pilih wifi
 2. Buka CMD, kemudian ketikan perintah tracert www.ust.hk
- 
-3. Stop capture pada wireshark
+
+<img width="1157" height="750" alt="image" src="https://github.com/user-attachments/assets/a5d615cd-30b6-44cc-bf4a-174148a057da" />
+
+3. Capture pada wireshark
 4. Lakukan filter ICMP
-5. Pilih dan expand salah satu paket ICMP Echo Request
-6. Pilih dan expand salah satu paket Time To Live (TTL)
+5. Pilih dan expand satu paket ICMP Echo Request
+6. Pilih dan expand satu paket Time To Live 
