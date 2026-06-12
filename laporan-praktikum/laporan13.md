@@ -30,10 +30,13 @@ Agar proses pencarian tidak dilakukan berulang kali, hasil pemetaan IP dan MAC A
 ## Jenis Pesan pada ARP
 
 - ARP Request
+
   ARP Request merupakan pesan permintaan yang digunakan untuk mencari MAC Address dari suatu alamat IP. Pesan ini dikirim secara broadcast sehingga dapat diterima oleh semua perangkat dalam jaringan lokal.
 
 - ARP Reply
+
   ARP Reply adalah pesan balasan dari perangkat yang alamat IP-nya sesuai dengan permintaan. Balasan ini berisi informasi MAC Address dan dikirim langsung kepada perangkat yang meminta.
 
 - ARP Cache
+
   ARP Cache adalah tempat penyimpanan sementara yang berisi daftar pasangan alamat IP dan MAC Address yang telah diketahui sebelumnya. Keberadaan ARP Cache membantu mengurangi jumlah ARP Request sehingga komunikasi menjadi lebih cepat dan  efisien.
