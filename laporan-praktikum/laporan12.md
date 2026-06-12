@@ -50,8 +50,8 @@ Dengan komponen-komponen tersebut, ICMP dapat membantu administrator jaringan da
 
 3. Stop capture pada wireshark
 4. Isi filter ICMP
-5. Pilih dan expand salah satu paket ICMP Echo Request
-6. Pilih dan expand salah satu paket ICMP Echo Reply
+5. Pilih dan expand satu paket ICMP Echo Request
+6. Pilih dan expand satu paket ICMP Echo Reply
 
 ## Kita Cek
 - Pesan ICMP yang dihasilkan program Ping
@@ -61,7 +61,7 @@ Dengan komponen-komponen tersebut, ICMP dapat membantu administrator jaringan da
   
   Hasil capture Wireshark menunjukkan adanya dua tipe pesan ICMP yang dihasilkan oleh program ping, yakni Echo Request dan Echo Reply. Berdasarkan data yang tertangkap, ping dilakukan sebanyak 10 kali yang dapat diidentifikasi dari nilai sequence number yang tercatat mulai dari seq=1/256 hingga seq=10/2560. Setiap satu kali proses ping akan menghasilkan satu paket request dan satu paket reply, sehingga total keseluruhan paket ICMP yang tertangkap berjumlah 20 paket. Di luar paket ping tersebut, terdapat satu paket bertipe Destination Unreachable yang berasal dari host 35.211.225.161, yang mengindikasikan bahwa port pada tujuan tidak dapat dijangkau.
 
-- Format dan Isi Pesan ICMP
+- Format Isi Pesan ICMP
   1. ICMP Echo Request
      
      <img width="1417" height="840" alt="image" src="https://github.com/user-attachments/assets/92234d76-3c88-4f75-87a2-31964d36737f" />
