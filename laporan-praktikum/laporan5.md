@@ -8,6 +8,7 @@ __________________________________________
 Tujuan Praktikum
 - Kita sebagai mahasiswa dapat mempelajari cara kerja protokol UDP menggunakan Wireshark.
 
+## UDP
 UDP (User Datagram Protocol) adalah salah satu protokol di lapisan transport pada model TCP/IP yang digunakan untuk mengirim data secara langsung tanpa perlu membangun koneksi terlebih dahulu. Artinya, sebelum data dikirim, tidak ada proses “jabat tangan” seperti pada TCP data bisa langsung dikirim begitu saja.
 
 ## Langkah-Langkah Praktikum
