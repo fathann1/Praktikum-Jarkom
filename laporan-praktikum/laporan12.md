@@ -95,4 +95,38 @@ Dengan komponen-komponen tersebut, ICMP dapat membantu administrator jaringan da
 3. Capture pada wireshark
 4. Lakukan filter ICMP
 5. Pilih dan expand satu paket ICMP Echo Request
-6. Pilih dan expand satu paket Time To Live 
+6. Pilih dan expand satu paket Time To Live
+
+## Kita Cek
+- Pesan ICMP yang dihasilkan oleh program  tracerout
+
+   <img width="1600" height="949" alt="image" src="https://github.com/user-attachments/assets/a12f2763-5abc-4d19-9e64-15983deda22d" />
+
+1. ICMP Echo Request : Paket ini digunakan untuk meminta respon dari host atau router yang dilewati
+2. ICMP Time Exceeded (TTL Expired) : Pesan yang dikirim oleh router ketika nilai TTL pada suatu paket habis sebelum paket mencapai tujuan
+
+
+- Format dan Isi Pesan ICMP
+1. ICMP Echo Request
+
+      <img width="1600" height="948" alt="image" src="https://github.com/user-attachments/assets/f59cc8ef-2b95-4086-951c-977c16941a1b" />
+
+   (packet 6610 — src: 192.168.68.155 → dst: 143.89.209.9)
+
+      - Type = 8 → menunjukkan paket merupakan Echo Request atau permintaan ping
+      - Code = 0 → tidak terdapat informasi tambahan/error pada paket
+      - Checksum = 0xf7ae [correct] → checksum valid sehingga paket tidak mengalami kerusakan saat transmisi
+      - Identifier = 1 (0x0001) → digunakan sebagai penanda paket request
+      - Sequence Number = 80 (0x0050) → menunjukkan bahwa paket ini merupakan paket urutan ke-80
+2. ICMP Time Exceeded
+
+      <img width="1600" height="948" alt="image" src="https://github.com/user-attachments/assets/d2370ec3-7086-47c5-b49e-0ce052e8386d" />
+
+   (packet 6612 — src: 192.168.68.1 → dst: 192.168.68.155)
+
+      - Type = 11 → menunjukkan paket merupakan Time Exceeded
+      - Code = 0 → berarti TTL exceeded in transit, yaitu TTL habis di perjalanan
+      - Checksum = 0xf4ff [correct] → menandakan paket diterima tanpa error
+      - Source IP = 192.168.68.1 → router yang mengirim pesan TTL exceeded
+      - Destination IP = 192.168.68.155 → host pengirim traceroute
+      - Time to Live = 1 → nilai TTL pada paket asli yang dikirim, menunjukkan traceroute sedang menelusuri hop pertama
