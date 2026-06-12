@@ -7,6 +7,6 @@ __________________________________________
 Tujuan Praktikum
 - Kita sebagai mahasiswa dapat mempelajari cara kerja protokol ICMP menggunakan Wireshark.
 
-## Fungsi ICMP
+**Fungsi ICMP**
 
 ICMP (Internet Control Message Protocol) digunakan untuk membantu proses komunikasi dan pemantauan jaringan. Fungsi utamanya adalah:
