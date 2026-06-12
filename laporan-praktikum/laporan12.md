@@ -1,4 +1,4 @@
-# Modul 11 - ICMP
+# Modul 12 - ICMP
 Nama       : Muhammad Rajwa Al Fathan Koessaputra  
 NIM        : 103072400113  
 Kelas      : IF-04-05  
