@@ -4,6 +4,11 @@ NIM        : 103072400113
 Kelas      : IF-04-05  
 Mata Kuliah: Jaringan Komputer  
 __________________________________________
+
+Tujuan Praktikum
+- Kita sebagai mahasiswa dapat mempelajari cara kerja protokol WIFI menggunakan Wireshark.
+
+## TCP
 TCP (Transmission Control Protocol) merupakan protokol pada lapisan transport yang bersifat connection-oriented, yaitu proses pengiriman data harus diawali dengan pembentukan koneksi terlebih dahulu. TCP memastikan data dikirim secara andal melalui penggunaan mekanisme seperti sequence number, acknowledgment, flow control, dan congestion control.
 
 ## Analisis Transfer File Menggunakan Protocol TCP
