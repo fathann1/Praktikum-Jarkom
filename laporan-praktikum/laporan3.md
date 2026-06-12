@@ -6,7 +6,7 @@ Mata Kuliah: Jaringan Komputer
 __________________________________________
 
 Tujuan Praktikum
-- Kita sebagai mahasiswa dapat mempelajari cara kerja protokol WIFI menggunakan Wireshark.
+- Kita sebagai mahasiswa dapat mempelajari cara kerja protokol HTTP menggunakan Wireshark.
 
 HTTP
 ## Modul 3.2 Basic HTTP GET/response interaction
