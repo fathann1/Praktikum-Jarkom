@@ -48,3 +48,11 @@ Disini Kita mengecek perpindahan data, diterapkan filter alamat IP server Untuk 
 Hasil menunjukkan proses Three-Way Handshake TCP (SYN → SYN-ACK → ACK) yang dimulai pada Frame 474 diikuti oleh paket HTTP GET pada Frame 480 untuk mengunduh dokumen teks /wireshark-labs/alice.txt dengan protokol HTTP/1.1.
 
 Setelah Kita Cek, Paket data dibungkus menggunakan protokol IEEE 802.11 plus radiotap header sebelum diteruskan melalui lapisan Logical-Link Control (LLC) ke Internet Protocol Version 4 (IPv4) dengan alamat asal klien 192.168.1.109 dan alamat tujuan server 128.119.245.12. Paket HTTP GET ini dikirimkan pada frekuensi 2437 MHz (Channel 6, 2.4 GHz) menggunakan standar 802.11g (ERP) dengan kecepatan data 48,0 Mb/s, dengan kekuatan sinyal sebesar -38 dBm dan rasio sinyal terhadap noise sebesar 62 dB.
+
+## Mengecek Association & Disassociation
+
+tulis filter "wlan.fc.type_subtype == 0"
+
+<img width="1600" height="946" alt="image" src="https://github.com/user-attachments/assets/959c1f5d-86f7-4fc1-9891-673bb4d42fae" />
+
+<img width="1918" height="1138" alt="image" src="https://github.com/user-attachments/assets/09ff6b56-513f-40bb-aad4-0bf26a3dfa29" />
