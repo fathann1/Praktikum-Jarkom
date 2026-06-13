@@ -41,10 +41,10 @@ Cek Tagged Parameters
 - Tag: Extended Supported Rates: Menyebutkan kecepatan tambahan yang didukung oleh standar yang lebih baru, berkisar dari 6 Mbps hingga 54 Mbps.
 
 ## Kita Cek Data Transfer
-Untuk menganalisis perpindahan data, diterapkan filter alamat IP server: Untuk menganalisis perpindahan data, diterapkan filter alamat IP server:
+Disini Kita mengecek perpindahan data, diterapkan filter alamat IP server Untuk menganalisis perpindahan data, diterapkan filter alamat IP server ip.addr == 128.119.245.12
 
-<img width="816" height="416" alt="image" src="https://github.com/user-attachments/assets/6d1fe970-aad5-4ddd-a180-3864859ee4d1" />
+<img width="1600" height="944" alt="image" src="https://github.com/user-attachments/assets/31faf052-b57b-42c6-87b6-ea83cffccfe8" />
 
-Hasil menunjukkan proses Three-Way Handshake TCP (SYN $\rightarrow$ SYN-ACK $\rightarrow$ ACK) diikuti oleh paket HTTP GET pada Frame 480 untuk mengunduh dokumen teks /wireshark-labs/alice.txt.  
+Hasil menunjukkan proses Three-Way Handshake TCP (SYN → SYN-ACK → ACK) yang dimulai pada Frame 474 diikuti oleh paket HTTP GET pada Frame 480 untuk mengunduh dokumen teks /wireshark-labs/alice.txt dengan protokol HTTP/1.1.
 
-Analisis Protokol: Paket data dibungkus menggunakan protokol kendali tautan logis (Logical-Link Control / LLC) sebelum diteruskan ke Internet Protocol Version 4 (IPv4) dengan alamat asal klien 192.168.1.109 dan alamat tujuan server 128.119.245.12
+Setelah Kita Cek, Paket data dibungkus menggunakan protokol IEEE 802.11 plus radiotap header sebelum diteruskan melalui lapisan Logical-Link Control (LLC) ke Internet Protocol Version 4 (IPv4) dengan alamat asal klien 192.168.1.109 dan alamat tujuan server 128.119.245.12. Paket HTTP GET ini dikirimkan pada frekuensi 2437 MHz (Channel 6, 2.4 GHz) menggunakan standar 802.11g (ERP) dengan kecepatan data 48,0 Mb/s, dengan kekuatan sinyal sebesar -38 dBm dan rasio sinyal terhadap noise sebesar 62 dB.
