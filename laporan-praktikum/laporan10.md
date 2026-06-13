@@ -56,7 +56,7 @@ Fragmentasi adalah proses membagi paket IP menjadi beberapa bagian yang lebih ke
 Hasil Fragmentasi:
 1. Buka Wireshark dan pilih jaringan wifi
 2. Buka terminal masukkan ini "ping google.com -l 2000"
-3. Kembali ke wireshark stop capture, lalu filter "ip.flags.mf == 1 || ip.frag_offset >"
+3. Kembali ke wireshark stop capture, lalu filter "ip.flags.mf == 1 || ip.frag_offset > 0"
 
 <img width="1600" height="950" alt="image" src="https://github.com/user-attachments/assets/824ed865-c663-4eb9-b19e-83cbb45ecc46" />
 
