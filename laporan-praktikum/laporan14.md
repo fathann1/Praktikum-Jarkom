@@ -53,6 +53,51 @@ Setelah Kita Cek, Paket data dibungkus menggunakan protokol IEEE 802.11 plus rad
 
 tulis filter "wlan.fc.type_subtype == 0"
 
-<img width="1600" height="946" alt="image" src="https://github.com/user-attachments/assets/959c1f5d-86f7-4fc1-9891-673bb4d42fae" />
+<img width="1600" height="948" alt="image" src="https://github.com/user-attachments/assets/9db787f5-ebe4-4ce1-8175-006a4b2f0030" />
 
-<img width="1918" height="1138" alt="image" src="https://github.com/user-attachments/assets/09ff6b56-513f-40bb-aad4-0bf26a3dfa29" />
+### Expand paket awal
+
+<img width="1600" height="950" alt="image" src="https://github.com/user-attachments/assets/8b672526-1bcb-4f9f-99fc-57141da49bde" />
+
+Pada Frame 1750, perangkat Intel_d1:b6:4f (00:13:02:d1:b6:4f) mengirimkan Association Request kepada AP CiscoLinksys_f5:ba:bb (00:18:39:f5:ba:bb) dengan SSID "linksys_SES_24086". Detail frame menunjukkan:
+
+- Type/Subtype: Association Request (0x0000)
+- Frame Control Field: 0x0000
+- Duration: 314 mikrodetik
+- Sequence Number: 1607
+- BSS Id: CiscoLinksys_f5:ba:bb (00:18:39:f5:ba:bb)
+- WLAN Flags: ........C
+
+
+### Expand paket akhir
+
+<img width="1600" height="950" alt="image" src="https://github.com/user-attachments/assets/050a87fa-6c7f-40d3-a5f6-135506ebc7fe" />
+
+Pada Frame 2162, klien Intel_d1:b6:4f (00:13:02:d1:b6:4f) berpindah dan mengirimkan Association Request baru ke AP CiscoLinksys_f7:1d:51 (00:16:b6:f7:1d:51) dengan SSID "30 Munroe St". Detail frame menunjukkan:
+
+- Type/Subtype: Association Request (0x0000)
+- Frame Control Field: 0x0000
+- Duration: 44 mikrodetik
+- Sequence Number: 1648
+- BSS Id: CiscoLinksys_f7:1d:51 (00:16:b6:f7:1d:51)
+- WLAN Flags: ........C
+
+Jika membandingkan paket permintaan asosiasi teratas (Frame 1750) dengan paket asosiasi terbawah (Frame 2162), terjadi perubahan pada bagian parameter SSID:
+
+Pada Frame 1750, klien mencoba berasosiasi ke AP dengan SSID "linksys_SES_24086".
+Pada Frame 2162 (paling bawah), klien berpindah dan mengirim permintaan asosiasi baru ke AP dengan SSID "30 Munroe St".
+
+Tanggapan Asosiasi (Association Response) dianalisis melalui filter subtype respon: wlan.fc.type_subtype == 1
+Ditemukan Frame 2166 yang merupakan Association Response dengan detail sebagai berikut:
+
+<img width="1600" height="754" alt="image" src="https://github.com/user-attachments/assets/9b7403a4-e5a9-47d4-92fc-af6489f94e5b" />
+
+- Type/Subtype: Association Response (0x0001)
+- Frame Control Field: 0x1000
+- Duration: 314 mikrodetik
+- Sequence Number: 3728
+- Receiver address: Intel_d1:b6:4f (00:13:02:d1:b6:4f)
+- Transmitter address: CiscoLinksys_f7:1d:51 (00:16:b6:f7:1d:51)
+- BSS Id: CiscoLinksys_f7:1d:51 (00:16:b6:f7:1d:51)
+
+Di sini, Transmitter Address diisi oleh MAC Address milik perangkat pengirim respon, yaitu CiscoLinksys_f7:1d:51, sebagai tanda bahwa Access Point menyetujui permintaan koneksi dari klien (Intel_d1:b6:4f).
