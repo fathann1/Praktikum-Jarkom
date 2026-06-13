@@ -14,4 +14,28 @@ Dalam jaringan Wi-Fi, terdapat dua frekuensi utama yang umum digunakan, yaitu 2.
 
 Selain frekuensi, dibahas pula mengenai Access Point (AP) yang berfungsi sebagai jembatan jaringan untuk menghubungkan klien nirkabel ke jaringan kabel lokal sekaligus memperluas jangkauan sinyal. Pengguna dapat berpindah antar Access Point secara otomatis ketika berpindah lokasi, dan perangkat akan menyambung ke AP terdekat tanpa perlu konfigurasi manual.
 
-Konsep penting lainnya adalah Beacon Frame, yaitu paket yang dikirim secara berkala oleh AP kepada perangkat untuk mengkonfirmasi keberadaan dan status koneksi jaringan. Pada Wireshark, beacon frame dapat disaring menggunakan filter wlan.fc.subtype == 8 && wlan.fc.type == 0, dan dari hasil analisis terlihat bahwa beacon frame dikirimkan dengan interval setiap 8 milidetik.
+Konsep penting lainnya adalah Beacon Frame, yaitu paket yang dikirim secara berkala oleh AP kepada perangkat untuk mengkonfirmasi keberadaan dan status koneksi jaringan. Pada Wireshark, beacon frame dapat disaring menggunakan filter wlan.fc.subtype == 8 && wlan.fc.type == 0
+
+## Kita Cek
+
+Disini KIta akan mengecek data Wireshark_802_11.pcap
+
+<img width="1568" height="697" alt="image" src="https://github.com/user-attachments/assets/303e919e-6cff-4ae1-a5c4-afc581c46fcb" />
+
+Berdasarkan hasil tangkapan layar Wireshark, Beacon Frame dikirimkan secara periodik setiap sekitar 102 milidetik (Time delta from previous displayed frame: 102.350000 milliseconds). Tercatat bahwa aktivitas beaconing ini berlangsung dengan total pengiriman sebanyak 2364 paket, dengan 762 paket yang ditampilkan setelah filter diterapkan.
+
+<img width="1918" height="1137" alt="image" src="https://github.com/user-attachments/assets/1a8189ce-b34b-486e-b671-ebcd9507298d" />
+
+Berdasarkan ekspansi detail paket pada Frame 100, ditemukan parameter-parameter berikut:
+
+- PHY Type (802.11b HR/DSSS): Menunjukkan tipe lapisan fisik nirkabel yang digunakan adalah standar 802.11b berkecepatan tinggi dengan modulasi High-Rate Direct Sequence Spread Spectrum.
+- Short Preamble (False): Menandakan penggunaan Preamble panjang (Long Preamble). Nilai False berarti sistem memprioritaskan kompatibilitas dengan perangkat lama dibanding optimasi kecepatan.
+- Channel (6) / Frequency (2437 MHz): Jaringan ini beroperasi pada Saluran 6 di spektrum frekuensi 2.4 GHz.
+- Signal Strength / Noise Level: Kekuatan sinyal yang diterima adalah -30 dBm (sangat kuat/bagus) dengan tingkat gangguan (Noise) berada pada -100 dBm, menghasilkan Signal/Noise Ratio sebesar 70 dB.
+- Data Rate: Kecepatan transfer data saat frame ini dikirim adalah 1,0 Mb/s.
+
+Cek Tagged Parameters
+
+- Tag: SSID parameter set: Menampilkan identitas nama jaringan Wi-Fi, yaitu "30 Munroe St".
+- Tag: Supported Rates: Menyebutkan kecepatan transfer data yang didukung oleh AP ini, yakni 1, 2, 5.5, dan 11 Mbps.
+- Tag: Extended Supported Rates: Menyebutkan kecepatan tambahan yang didukung oleh standar yang lebih baru, berkisar dari 6 Mbps hingga 54 Mbps.
