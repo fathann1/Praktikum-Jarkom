@@ -39,3 +39,12 @@ Cek Tagged Parameters
 - Tag: SSID parameter set: Menampilkan identitas nama jaringan Wi-Fi, yaitu "30 Munroe St".
 - Tag: Supported Rates: Menyebutkan kecepatan transfer data yang didukung oleh AP ini, yakni 1, 2, 5.5, dan 11 Mbps.
 - Tag: Extended Supported Rates: Menyebutkan kecepatan tambahan yang didukung oleh standar yang lebih baru, berkisar dari 6 Mbps hingga 54 Mbps.
+
+## Kita Cek Data Transfer
+Untuk menganalisis perpindahan data, diterapkan filter alamat IP server: Untuk menganalisis perpindahan data, diterapkan filter alamat IP server:
+
+<img width="816" height="416" alt="image" src="https://github.com/user-attachments/assets/6d1fe970-aad5-4ddd-a180-3864859ee4d1" />
+
+Hasil menunjukkan proses Three-Way Handshake TCP (SYN $\rightarrow$ SYN-ACK $\rightarrow$ ACK) diikuti oleh paket HTTP GET pada Frame 480 untuk mengunduh dokumen teks /wireshark-labs/alice.txt.  
+
+Analisis Protokol: Paket data dibungkus menggunakan protokol kendali tautan logis (Logical-Link Control / LLC) sebelum diteruskan ke Internet Protocol Version 4 (IPv4) dengan alamat asal klien 192.168.1.109 dan alamat tujuan server 128.119.245.12
